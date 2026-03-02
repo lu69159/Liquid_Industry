@@ -1,0 +1,19 @@
+{
+    "name": "人造太阳",
+    "size": 4,
+    "health": 840,
+    "brightness": 0.99,
+    "radius": 7200,
+    "canOverdrive": false,
+    "consumes": {
+        "power": 1.8
+    },
+    "requirements": [
+        "graphite/68",
+        "silicon/42",
+        "plastanium/12",
+        "phase-fabric/18"
+    ],
+    "category": "effect",
+    "research": "大型照明器"
+}

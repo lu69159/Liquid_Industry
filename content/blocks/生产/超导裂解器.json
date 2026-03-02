@@ -1,0 +1,67 @@
+{
+    "description": "消耗巨量电力裂解固态水以制造超导质。",
+	"name": "超导裂解器",
+    "health": 580,
+    "size": 3,
+    "hasPower": true,
+	"hasItems": true,
+    "hasLiquids": false,
+    "itemCapacity": 5,
+    "baseShake": 4,
+    "baseExplosiveness": 15,
+    "requirements": [
+        "titanium/120",
+        "thorium/80",
+        "silicon/100",
+        "graphite/55"
+	],
+    "consumes": {
+		"power": 9,
+		"items": [
+            "固态水/1"
+		]
+	},
+    "outputItems": [
+        "超导质/1"
+    ],
+
+    "craftTime": 234,
+    "category": "crafting",
+    "research": {
+        "parent": "亲水质合成器",
+        "objectives": [
+			{
+				"type": "SectorComplete",
+				"preset": "测试区"
+			}
+		]
+    },
+    "craftEffect": "steam",
+    "drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+            {
+                "type": "DrawRegion",
+                "suffix": "-bottom"
+            },
+            {
+                "type": "DrawFrames",
+                "frames": 38,
+                "interval": 6,
+                "sine": false
+
+            },
+            {
+				"type": "DrawGlowRegion",
+                "color":"FFFFFFFF",
+                "glowScale": 4,
+                "suffix": "-glow"
+			},
+			{
+				"type": "DrawRegion",
+                "suffix": "-top"
+			}
+			
+		]
+	}
+}

@@ -1,0 +1,61 @@
+{
+
+    "ammoTypes":{
+        "titanium":{
+            "type": "ShrapnelBulletType",
+            "length": 100,
+            "damage": 66,
+            "ammoMultiplier": 4,
+            "width": 17,
+            "reloadMultiplier": 1.3
+        },
+        "thorium":{
+            "type": "ShrapnelBulletType",
+            "length": 100,
+            "damage": 105,
+            "ammoMultiplier": 5,
+            "width": 17,
+            "toColor": "FF6BCE",
+            "shootEffect": "thoriumShoot",
+            "smokeEffect": "thoriumShoot"
+        },
+        "surge-alloy":{
+            "type": "ShrapnelBulletType",
+            "rangeChange": 90,
+            "length": 190,
+            "damage": 185,
+            "ammoMultiplier": 5,
+            "width": 17,
+            "toColor": "F3E979",
+            "reloadMultiplier": 0.9,
+            "status": "shocked",
+            "shootEffect": {
+				"type": "ParticleEffect",
+				"particles": 9,
+				"line": true,
+				"lenFrom": 25,
+				"lenTo": 0,
+				"length": 55,
+				"baseLength": 0,
+				"lifetime": 25,
+				"colorFrom": "FFFFFF",
+				"colorTo": "F3E979",
+				"cone": 30
+			},
+            "smokeEffect": "none",
+
+            "intervalBullet": {
+                "type": "LightningBulletType",
+                "damage": 15,
+                "pierceArmor": true,
+                "lightningColor": "F3E979",
+                "lightningLength": 20,
+                "lightningLengthRand": 10
+            },       
+            "intervalBullets": 1,
+            "intervalRandomSpread": 10,
+            "intervalSpread": 15,
+            "intervalAngle": 0
+        }
+    }
+}

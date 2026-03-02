@@ -1,0 +1,141 @@
+//FROM DIMENSION
+{
+    "name": "破防",
+    "targetAir": true,
+    "targetGround": true,
+    "health": 180,
+    "size": 3,
+    "shake": 0.05,
+    "inaccuracy": 2,
+    "recoil": 2,
+    "recoilTime": 10,
+    "cooldownTime": 80,
+    "shootSound": "shootArtillerySmall",
+    "shootEffect": "shootBig",
+    "shootType": {
+        "type": "PointBulletType",
+        "buildingDamageMultiplier": 0.2,
+        "trailEffect": {
+            "type": "ParticleEffect",
+			"sizeInterp": "pow5Out",
+			"particles": 1,
+			"length": 0,
+			"baseLength": 0.2,
+			"lifetime": 30,
+			"line": true,
+			"randLength": false,
+			"lenFrom": 13,
+			"lenTo": 13,
+			"strokeFrom": 6,
+			"strokeTo": 0,
+			"colorFrom": "FF795EFF",
+			"colorTo": "FF795E80",
+			"cone": 0
+        },
+        "hitEffect": "none",
+        "despawnEffect": "none",
+        "splashDamageRadius": 24,
+        "splashDamage": 45,
+        "knockback": 2.5,
+        "speed": 20,
+        "lifetime": 37,
+        "ammoMultiplier": 1,
+        "fragBullets": 4,
+        "fragBullet": {
+            "type": "PointBulletType",
+            "buildingDamageMultiplier": 0.2,
+            "pierceArmor": true,
+            "trailEffect": {
+            "type": "ParticleEffect",
+			"sizeInterp": "pow5Out",
+			"particles": 1,
+			"length": 0,
+			"baseLength": 0.2,
+			"lifetime": 30,
+			"line": true,
+			"randLength": false,
+			"lenFrom": 13,
+			"lenTo": 13,
+			"strokeFrom": 4,
+			"strokeTo": 0,
+			"colorFrom": "FF795EFF",
+			"colorTo": "FF795E80",
+			"cone": 0
+        },
+            "hitEffect": "flakExplosion",
+            "despawnEffect": "flakExplosion",
+            "splashDamageRadius": 16,
+            "splashDamage": 34,
+            "status": "blasted",
+            "statusDuration": 30,
+            "speed": 27,
+            "lifetime": 1,
+                "fragBullets": 3,
+                "fragBullet": {
+                "type": "BasicBulletType",
+                "buildingDamageMultiplier": 0.2,
+                "pierceArmor": true,
+                "trailEffect": "none",
+                "hitEffect": "flakExplosion",
+                "despawnEffect": "flakExplosion",
+                "splashDamageRadius": 16,
+                "splashDamage": 22,
+                "status": "blasted",
+                "statusDuration": 30,
+                "speed": 29,
+                "lifetime": 1,
+                   "fragBullets": 3,
+                   "fragBullet":{
+                    "type": "LightningBulletType",
+                    "damage": 21,
+                    "buildingDamageMultiplier": 0.007,
+                    "lightningLength": 3
+              }
+            }
+        }
+    },
+    "consumes": {
+        "power": 4,
+        "coolant": {
+            "amount": 0.8,
+            "optional": true
+        }
+    },
+    "coolantMultiplier": 0.5,
+    "reload": 30,
+    "rotateSpeed": 6,
+    "range": 240,
+    "category": "turret",
+    "research": "微型核心基座",
+    "requirements": [
+        "titanium/30",
+        "silicon/70",
+        "blast-compound/5"
+    ],
+    "buildCostMultiplier": 2,
+
+    "destroyBullet": {
+        "type": "ExplosionBulletType",
+        "makeFire": true,
+        "incendAmount": 6,
+        "splashDamage": 10,
+        "splashDamageRadius": 160,
+        "splashDamagePierce": true,
+        "buildingDamageMultiplier": 50,
+        "lightning": 6,
+        "lightningDamage": 25,
+        "lightningLength": 40,
+        "lightningColor": "E46B58",
+        "lightningAngle": 60
+    },
+    "destroyEffect": {
+        "type": "WaveEffect",
+        "lifetime": 20,
+        "sizeFrom": 0,
+        "sizeTo": 160,
+        "strokeFrom": 2,
+        "strokeTo": 0,
+        "colorFrom": "E46B58",
+        "colorTo": "E46B58"
+    }   
+}

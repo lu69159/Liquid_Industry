@@ -1,0 +1,26 @@
+{
+	"name": "真空泵",
+	"size": 4,
+	"squareSprite": false,
+	"health": 860,
+	"liquidCapacity": 120,
+	"hasLiquids": true,
+	"pumpAmount": 0.7,
+	"consumes": {"power":5.2},
+	"requirements": [
+        "copper/200",
+        "metaglass/220",
+        "titanium/100",
+        "thorium/50",
+        "silicon/40",
+        "亲水质/5"
+	],
+	"category": "liquid",
+	"research": "thermal-pump",
+    "drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+	"DrawPumpLiquid",
+	"DrawDefault"
+	]}
+}

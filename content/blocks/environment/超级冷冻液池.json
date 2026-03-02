@@ -1,0 +1,19 @@
+{
+    "type": "Floor",
+    "name": "超级冷冻液",
+    "speedMultiplier":0.05, //移动速率
+    "emitLight": true,
+    "lightRadius": 32,
+    "lightColor":"D8F3FF66",
+    "variants":0,
+    "albedo": 0.9, //反照率
+    "drownTime": 200,
+    "cacheLayer":"cryofluid",
+    "isLiquid": true,
+    "liquidDrop": "超级冷冻液",
+    "liquidMultiplier": 0.3,
+    "supportsOverlay":true,
+
+    "status": "unmoving",
+	"statusDuration": 240
+}

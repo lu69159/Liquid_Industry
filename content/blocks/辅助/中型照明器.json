@@ -1,0 +1,18 @@
+{
+    "name": "中型照明器",
+    "size": 2,
+    "health": 120,
+    "brightness": 0.8,
+    "radius": 320,
+    "canOverdrive": false,
+    "consumes": {
+        "power": 0.25
+    },
+    "requirements": [
+        "graphite/24",
+        "silicon/15",
+        "lead/12"
+    ],
+    "category": "effect",
+    "research": "illuminator"
+}

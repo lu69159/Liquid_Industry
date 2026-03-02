@@ -1,0 +1,85 @@
+{
+    "name": "河狸",
+    "hovering": true,
+    "canDrown": false,
+    "research": {
+        "parent": "筏蛛",
+        "objectives": [
+            {
+                "type": "SectorComplete",
+                "preset": "coastline"
+            }
+        ]
+    },
+    "squareShape": true,
+	"omniMovement": true,
+	"rotateMoveFirst": true,
+    "rotateSpeed": 2.5,
+	"speed": 1,
+    "hitSize": 20,
+    "ammoCapacity": 40,
+	"health": 2300,
+	"armor": 16,
+	"drag": 0.05,
+	"accel": 0.08,
+    "itemCapacity": 30,
+	"faceTarget": false,
+    "targetFlags": [
+		"turret",
+		"core"
+	],
+    "immunities": [
+        "freezing"
+    ],
+    "requirements": {
+		"block": "multiplicative-reconstructor",
+		"previous": "筏蛛"
+	},
+    "abilities": [
+        {
+            "type": "SpawnDeathAbility",
+            "faceOutwards": true,
+            "amount": 1,
+            "spread": 1,
+            "unit": "水黾"
+        }
+	],
+    "weapons": [
+        {
+            "name": "河狸1",
+            "reload": 360,
+            "recoil": 3,
+            "x": 0,
+            "y": 0,
+            "shootY": 15,
+            "rotate": true,
+            "rotateSpeed": 1,
+            "mirror": false,
+            "inaccuracy": 0,
+            "shootSound": "shootCorvus",
+            "chargeSound": "chargeCorvus",
+            "shake": 6,
+            "alternate": false,
+            "bullet": {
+                "type": "LaserBulletType",
+
+                "lightningSpacing": 20,
+                "lightningLength": 3,
+                "lightningDelay": 0.1,
+                "lightningLengthRand": 12,
+                "lightningDamage": 15,
+                "lightningAngleRand": 45,
+                "lightningColor": "FFFFFFA0",
+
+                "damage": 505,
+                "length": 300,
+                "width": 40,
+                "sideAngle": 30,
+                "pierceCap": -1,
+                "collidesAir": true,
+                "hitEffect": "hitLaser",
+                "chargeEffect": "lancerLaserCharge"
+            }
+        }
+    ]
+}

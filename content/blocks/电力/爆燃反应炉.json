@@ -1,0 +1,129 @@
+{
+    "name": "爆燃反应炉",
+    "size": 5,
+    "health": 2800,
+    "liquidCapacity": 50,
+	"itemCapacity": 20,
+	"hasItems": true,
+	"hasLiquids": true,
+	/*
+	"outputsLiquid": true,
+
+	"outputLiquid": {
+		"liquid": "slag",
+		"amount": 1
+	},
+	"explodeOnFull": true,
+	*/
+	"explosionPuddles": 256,
+	"explosionPuddleLiquid": "oil",
+	"explosionPuddleAmount": 650,
+	"explosionPuddleRange": 64,
+	"explosionMinWarmup": 0.5,
+
+	"outputsPower": true,
+    "powerProduction": 330.5,
+	"itemDuration": 60,
+    "lightColor": "FFEEEE",
+	"ambientSound": "explosionAfflict", //我没试听过啊（）
+    "ambientSoundVolume": 0.075,	
+	"explosionShake": 12,
+	"explosionShakeDuration": 240,
+	"explosionRadius": 64,
+	"explosionDamage": 28500,
+    "explodeSound": "explosionReactorNeoplasm",
+	//largeExplosion
+    "explodeEffect": { 
+		"type": "MultiEffect",
+		"effects": [
+			{
+				"type": "WaveEffect",
+				"lifetime": 30,
+				"sizeFrom": 0,
+				"sizeTo": 512,
+				"strokeFrom": 18,
+				"strokeTo": 0,
+				"colorFrom": "FF0000",
+				"colorTo": "FFFFFF"
+			},
+			{
+				"type": "ParticleEffect",
+				"particles": 25,
+				"interp": "pow10Out",
+				//"sizeInterp": "pow3In",
+				"sizeFrom": 40,
+				"sizeTo": 0,
+				"length": 512,
+				"baseLength": 40,
+				"lifetime": 600,
+				"colorFrom": "FF0000FF",
+    			"colorTo": "FFFFFF80" 
+			},
+			{
+				"type": "ParticleEffect",
+				"particles": 75,
+				"interp": "pow5Out",
+				//"sizeInterp": "pow3In",
+				"sizeFrom": 40,
+				"sizeTo": 0,
+				"length": 512,
+				"baseLength": 15,
+				"lifetime": 600,
+				"colorFrom": "FF0000FF",
+				"colorTo": "FFFFFF80" 
+			}			
+		]
+	},
+	"updateEffect": "explosion",
+    "fuelItem": "固态石油",
+	"heating": 0.15,
+    "coolantPower": 2,
+	"consumes": {
+		"items": ["固态石油/1"],
+        "liquids": [
+			"超级冷冻液/0.08"
+		]		
+	},
+	
+    "requirements": [ 
+		"lead/1200",
+        "metaglass/880",
+		"graphite/360",
+		"titanium/420",
+		"silicon/550",
+		"plastanium/120",
+		"超导质/20",
+        "固态超级冷冻液/4"
+	],
+	"category": "power",
+	"research": {
+		"parent": "碳发电机",
+		"objectives": [
+			{
+				"type": "SectorComplete",
+				"preset": "永夜荒地"
+			}
+		]
+	},
+
+	"lightLiquid": "超级冷冻液",
+	"drawer":{
+		"type": "DrawMulti",
+		"drawers": [
+			{
+				"type": "DrawLiquidTile",
+                "drawLiquid": "slag"
+			},
+			{
+				"type": "DrawLiquidTile",
+                "drawLiquid": "超级冷冻液"
+			},
+			{
+				"type": "DrawBubbles",
+				"color": "D8F3FF66"
+			},
+			"DrawCrucibleFlame",
+			"DrawDefault"
+		]
+	}
+}

@@ -1,0 +1,46 @@
+{
+    "name": "无量级单位直构工厂",
+    "health":5830,
+	"size":9,
+    "liquidCapacity": 180,
+    "category": "units",
+    "research":{
+        "parent": "多幂级单位直构工厂",
+        "objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "极光壁垒"
+			}
+        ]
+    },
+    "requirements": [
+        "lead/4000",
+        "thorium/500",
+        "silicon/3000",
+        "plastanium/600",
+        "phase-fabric/325",
+        "surge-alloy/800",
+        "治愈质/400"
+    ],
+     "consumes":{
+        "power": 13,
+        "items":[
+            "silicon/1000",
+            "治愈质/630"
+        ],
+        "liquids":[
+            "cryofluid/3"
+        ]
+    },
+    "upgrades":[
+        ["dagger","reign"],
+        ["nova","corvus"],
+        ["crawler","toxopid"],
+        ["flare","eclipse"],
+        ["mono","oct"],
+        ["risso","omura"],
+        ["retusa","navanax"],
+        ["水黾","巨蟹"]
+    ],
+    "constructTime": 14400
+}

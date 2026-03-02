@@ -1,0 +1,23 @@
+{
+    "name": "建造球",
+    "description": "辅助建造或重建建筑。",
+    "research": "辅助工厂",
+    "health": 1000,
+    "armor": 0,
+    "hitSize": 4,
+    "speed": 2.7,
+    "accel": 0.08,
+    "drag": 0.04,
+    "itemCapacity": 0,
+    "fogRadius": 0,
+    "flying": true,
+    "faceTarget": true,
+    "isEnemy": false,
+    "controller":"BuilderAI",
+    "trailLength": 10,
+    "trailWidth": 2,
+    "trailColor": "B0BAC0",
+    "outlineColor": "00000000",
+
+    "buildSpeed": 0.4
+}

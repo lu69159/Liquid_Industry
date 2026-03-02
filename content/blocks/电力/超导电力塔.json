@@ -1,0 +1,16 @@
+{
+    "name": "超导电力塔",
+    "health": 600,
+    "size": 2,
+    "laserRange": 120,
+    "maxNodes": 5,
+    "schematicPriority": -15,
+    "requirements": [
+        "titanium/8",
+        "silicon/5",
+        "超导质/5",
+        "surge-alloy/3"
+    ],
+    "category": "power",
+    "research": "大型超导节点"
+}

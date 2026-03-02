@@ -1,0 +1,52 @@
+{
+    "name": "二级废液精馏器",
+    "size": 4,
+    "health": 880,
+    "hasPower": true,
+	"hasLiquids": true,
+    "itemCapacity": 20,
+	"liquidCapacity": 20,
+    "category": "crafting",
+	"research": "再精炼高炉",
+    "craftTime": 30,
+    "consumes": {
+		"power": 4.2,
+		"liquid": {
+			"liquid": "二级精炼废液",
+			"amount": 0.16
+		}
+	},
+    "requirements": [
+        "thorium/185",
+        "metaglass/85",
+        "silicon/60",
+        "亲水质/25",
+        "surge-alloy/5"
+    ],
+    "results": [
+        {"item": "phase-fabric","amount": 3},
+        {"item": "plastanium","amount": 2},
+        {"item": "surge-alloy","amount": 2}
+    ],
+
+    "drawer": {
+        "type": "DrawMulti",
+        "drawers": [
+            {
+                "type": "DrawRegion",
+                "suffix": "-bottom"
+            },
+            {
+                "type": "DrawLiquidTile",
+                "drawLiquid": "二级精炼废液"
+            },
+            {
+                "type": "DrawRegion",
+                "suffix": "-rotator",
+                "spinSprite": true,
+                "rotateSpeed": 10
+            },
+            "DrawDefault"
+        ]
+    }
+}

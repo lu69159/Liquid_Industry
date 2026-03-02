@@ -1,0 +1,14 @@
+{
+	"name": "重水",
+	"alwaysUnlocked":false,
+	"effect": "corroded",
+	"lightColor":"3CA37030",
+	"color": "3D6E70FF",
+	"flammability": 0,
+	"temperature": 0.3,
+	"heatCapacity": 0.6,
+	"viscosity": 0.3,
+	"boilPoint": 0.52,
+	"research": "thorium",
+	"coolant": false
+}

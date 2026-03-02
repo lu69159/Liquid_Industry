@@ -1,0 +1,24 @@
+{
+	"name": "大型超能墙",
+	"health": 11200,
+	"size": 2,
+	"armor": 15,
+    "hasLiquids": true,
+    "liquidCapacity": 4800,
+	"requirements": [
+        "metaglass/48",
+		"titanium/72",
+        "surge-alloy/24",
+        "phase-fabric/24",
+        "plastanium/20",
+		"亲水质/12"         
+	],
+    "absorbLasers": true,
+	"insulated":true,
+    "placeableLiquid":true,
+    "chanceDeflect": 40,
+	"lightningChance": 0.2,
+	"lightningLength": 30,
+	"lightningDamage": 50,
+	"category": "defense"
+}

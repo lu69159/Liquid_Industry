@@ -1,0 +1,35 @@
+{
+    "name": "超导电池",
+    "health": 120,
+    "size": 1,
+    "consumes": {
+		"powerBuffered": 20000
+	},
+    "requirements": [
+        "titanium/5",
+        "lead/5",
+        "超导质/1"
+    ],
+    "baseExplosiveness": 3,
+    "category": "power",
+    "research": "超导节点",
+
+    "drawer": {
+        "type": "DrawMulti",
+		"drawers": [
+            {
+                "type": "DrawRegion",
+                "suffix": "-bottom"
+            },
+            {
+                "type": "DrawPower",
+                "emptyLightColor": "00A9A9FF",
+                "fullLightColor": "00FFFFFF"
+            },
+            {
+                "type": "DrawRegion",
+                "suffix": "-top"
+            }
+		]
+    }
+}

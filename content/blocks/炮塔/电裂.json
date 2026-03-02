@@ -1,0 +1,135 @@
+{
+    "name": "电裂",
+    "size": 2,
+    "health": 1250,
+    "range": 260,
+    "reload": 30,
+    "recoil": 1,
+    "recoilTime": 30,
+    "rotateSpeed": 15,
+    "inaccuracy": 15,
+    "shootCone": 30,
+    "targetGround": false,
+    "consumes": {
+        "power": 2.8,
+        "coolant": {
+            "amount": 0.2,
+            "optional": true
+        }
+    },
+    "shoot":{
+        "shots": 5,
+        "shotDelay": 2,
+        "type": "ShootPattern"
+    },
+    "shootType": {
+        "type": "FlakBulletType",
+        "lifetime": 46.67,
+        "speed": 6,
+        "damage": 5,
+        "splashDamage": 50,
+        "splashDamageRadius": 36,
+        "status": "electrified",
+        "statusDuration": 180,
+        "width": 9,
+        "height": 12,
+        "frontColor": "FFFFFFFF",
+		"backColor": "00FFFFA0",
+        "shootEffect": "sparkShoot",
+        "hitEffect": {
+            "type": "MultiEffect",
+            "effects": [
+                {
+                    "type": "WaveEffect",
+                    "lifetime": 20,
+                    "sizeFrom": 0,
+                    "sizeTo": 36,
+                    "strokeFrom": 3,
+                    "strokeTo": 0,
+                    "colorFrom": "FFFFFFFF",
+                    "colorTo": "FFFFFF70"
+                },
+                {
+                    "type": "ParticleEffect",
+                    "particles": 12,
+                    "line": true,
+                    "interp": "pow3Out",
+                    "sizeInterp": "pow2In",
+                    "strokeFrom": 2,
+                    "strokeTo": 0,
+                    "lenFrom": 15,
+                    "lenTo": 0,
+                    "length": 24,
+                    "baseLength": 10,
+                    "lifetime": 50,
+                    "colorFrom": "FFFFFFFF",
+                    "colorTo": "FFFFFF70"
+                }
+            ]
+        },
+        //"sparkExplosion"
+        "despawnEffect": {
+            "type": "MultiEffect",
+            "effects": [
+                {
+                    "type": "WaveEffect",
+                    "lifetime": 20,
+                    "sizeFrom": 0,
+                    "sizeTo": 36,
+                    "strokeFrom": 6,
+                    "strokeTo": 0,
+                    "colorFrom": "FFFFFFBF",
+                    "colorTo": "FFFFFF70"
+                },
+                {
+                    "type": "ParticleEffect",
+                    "particles": 16,
+                    "line": true,
+                    "interp": "pow3Out",
+                    "sizeInterp": "pow2In",
+                    "strokeFrom": 2,
+                    "strokeTo": 0,
+                    "lenFrom": 10,
+                    "lenTo": 0,
+                    "length": 16,
+                    "baseLength": 4,
+                    "lifetime": 20,
+                    "colorFrom": "FFFFFFBF",
+                    "colorTo": "FFFFFF70"
+                }
+            ]
+        }
+    },
+    "requirements": [
+        "copper/125",
+        "lead/105",
+        "graphite/75",
+        "超导质/1"
+    ],
+    "category": "turret",
+    "research": {
+		"parent": "破防",
+		"objectives": [
+			{
+				"type": "SectorComplete",
+				"preset": "狭长冰谷"
+			}
+		]
+	},
+
+    "drawer":{
+        "type": "DrawTurret",
+        "parts": [
+            {
+                "type": "RegionPart",
+                "suffix": "-mid",
+                "progress": "recoil",
+                "under": false,
+                "moveY": -1.25
+            }
+        ]
+    }
+}
+
+
+

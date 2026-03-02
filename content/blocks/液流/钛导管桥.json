@@ -1,0 +1,15 @@
+{
+    "name": "钛导管桥",
+    "size": 1,
+    "health": 60,
+    "range": 12,
+    "hasPower": false,
+    "liquidCapacity": 50,
+    "requirements": [
+        "metaglass/12",
+        "titanium/6",
+        "亲水质/0"
+	],
+    "category": "liquid",
+    "research": "bridge-conduit"
+}

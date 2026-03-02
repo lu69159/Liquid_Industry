@@ -1,0 +1,15 @@
+{
+    "name": "双传交叉器",
+    "health": 90,
+    "invert": true,
+    "floating": true,
+    "hasLiquids": true,
+    "liquidCapacity": 0,
+    "outputsLiquid": true,
+    "requirements": [
+        "metaglass/8",
+        "plastanium/2",
+        "surge-alloy/2"
+    ],
+    "category": "distribution"
+}

@@ -1,0 +1,31 @@
+{
+    "name": "解冻投影",
+    "hasLiquids": true,
+    "size": 2,
+    "health": 160,
+    "range": 80,
+    "useTime": 1,
+    "reload": 300,
+    "consumes": {
+        "power": 1.5,
+        "liquids":[
+            "cryofluid/0.05"
+        ]
+    },
+    "requirements": [
+        "lead/100",
+        "graphite/75",
+        "silicon/40",
+        "固态水/1"
+    ],
+    "category": "effect",
+    "research": {
+		"parent": "超频投影",
+		"objectives": [
+			{
+				"type": "SectorComplete",
+				"preset": "狭长冰谷"
+			}
+		]
+	}
+}

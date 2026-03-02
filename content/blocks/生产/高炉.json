@@ -1,0 +1,40 @@
+{
+	"name": "高炉",
+    "description": "将大量废料迅速熔化成矿渣液。",
+	"size": 2,
+	"hasPower": true,
+	"hasLiquids": true,
+	"hasItems": true,
+	"craftTime": 15,
+	"itemCapacity": 30,
+	"liquidCapacity": 75,
+	"consumes": {
+		"power": 3,
+		"items": ["scrap/4"]   
+	},
+    "outputLiquid": "slag/1.25",
+	"requirements": [
+		"copper/90",
+		"lead/105",
+		"graphite/120",
+        "metaglass/20"
+	],
+    "updateEffect": "smeltsmoke",
+	"category": "crafting",
+	"research": "melter",
+
+    "drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+			{
+                "type": "DrawRegion",
+                "suffix": "-bottom"
+            },
+			{
+                "type": "DrawLiquidTile",
+                "drawLiquid": "slag"
+            },
+            "DrawDefault"
+		]
+	}
+}

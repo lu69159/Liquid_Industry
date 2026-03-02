@@ -1,0 +1,298 @@
+{
+    "name":"神能凝聚仪",
+    "size": 4,
+    "health": 3300,
+    "armor": 5,
+    "hasItems": true,
+	"hasLiquids": true,
+    "hasPower": true,
+    "outputsLiquid": true,
+    "canOverdrive": false,
+    "itemCapacity": 1,
+    "liquidCapacity": 66, 
+    "buildCostMultiplier": 5,
+    "category": "crafting",
+    "craftTime": 60,
+    "requirements": [
+        "metaglass/220",
+        "graphite/1288",
+        "超导质/288",
+        "神秘物质/8"
+	],
+    "consumes": {
+		"power": 666,
+        "items":[
+            "metaglass/1",
+            "graphite/1",
+            "silicon/1",
+            "plastanium/1",
+            "surge-alloy/1",
+            "phase-fabric/1",
+            "治愈质/1",
+            "超导质/1",
+            "神秘物质/1"
+        ],
+		"liquids": [
+            "四级浓缩精华液/1"
+        ]
+	},
+    "outputLiquids": [
+        "超浓缩精华液/0.25"
+    ],
+
+    "craftEffect": "none",
+    "updateEffect": "none",
+
+    "destroyBullet":{
+        "type": "EmpBulletType",
+
+        "powerSclDecrease": 0,  
+        "timeDuration": 900,
+
+        "pierceBuilding": true,
+        "absorbable": false,
+        "reflectable": false,
+        "makeFire": true,
+        "sprite": "circle",
+        "radius": 600, //75*8,
+        "damage": 666,
+        "splashDamage": 300,
+        "splashDamageRadius": 600,
+        "splashDamagePierce": true,
+        "lifetime": 1,
+        "speed": 0,          
+
+        "lightRadius": 600,
+        "lightColor": "EFEFEF",
+        "hitColor": "EFEFEF",
+        "frontColor": "EFEFEF",
+        "backColor": "FFFFFF", 
+         
+        "hitEffect": {
+            "type": "MultiEffect",
+            "effects": [
+                {
+                    "type": "WaveEffect",
+                    "lifetime": 720, //120+600
+                    "sizeFrom": 600,
+                    "sizeTo": 550,
+                    "strokeFrom": 6,
+                    "strokeTo": 0,
+                    "colorFrom": "FFFFFFFF",
+                    "colorTo": "EFEFEFFF"
+                },
+                {
+                    "type": "ParticleEffect",
+                    "lifetime": 120,
+                    "particles": 1,
+                    "baseLength": 0,
+		            "length": 0,
+                    "region": "circle",
+                    "sizeFrom": 600,
+		            "sizeTo": 600,
+                    "lightColor": "EFEFEFFF",
+                    "colorFrom": "EFEFEFA0",
+                    "colorTo": "00000000"
+                },
+                {
+                    "type": "ParticleEffect",
+                    "lifetime": 90,
+                    "particles": 54,
+                    "line": true,
+                    "interp": "pow3Out",
+                    "sizeInterp": "pow2In",
+                    "strokeFrom": 2,
+                    "strokeTo": 0,
+                    "lenFrom": 140,
+                    "lenTo": 15,
+                    "length": 200,
+                    "baseLength": 500,
+                    "colorFrom": "FFFFFFFF",
+                    "colorTo": "FFFFFFFF"
+                }
+            ]
+        },
+        "hitPowerEffect":{
+            "type": "ParticleEffect",
+            "particles": 8,
+            "line": true,
+            "interp": "pow3Out",
+            "sizeInterp": "pow2In",
+            "strokeFrom": 2,
+            "strokeTo": 0,
+            "lenFrom": 15,
+            "lenTo": 0,
+            "length": 24,
+            "baseLength": 10,
+            "lifetime": 50,
+            "colorFrom": "FFFFFFFF",
+            "colorTo": "FFFFFF70"
+        },
+        
+        "lightning": 16,
+        "lightningCone": 360,
+        "lightningLength": 300,
+        "lightningLengthRand": 600,
+        "lightningDamage": 233,
+        "lightningColor": "FFFFFF",
+
+        "fragBullets": 1,
+        "fragOnHit": true,
+        "fragOnAbsorb": true,
+        "fragBullet":{
+            "type": "EmptyBulletType",
+            "damage": 0,
+            "speed": 0,
+            "absorbable": false,
+            "reflectable": false,
+            "hittable": false,
+            "collides": false,
+            "lifetime": 600,
+            "parts":[
+                {
+                    "type": "HaloPart",
+                    "progress": "life",
+                    "shapeRotation": 45,
+                    "sides": 3,
+                    "shapes": 2,
+                    "color": "EFEFEFFF",
+                    "colorTo": "FFFFFF80",
+                    "tri": true,
+                    "hollow": true,
+                    "radius": 16, //原为0
+                    "radiusTo": 8,
+                    "triLength": 480,
+                    "haloRadius": 0,
+                    "haloRotation": 0,
+                    "haloRotateSpeed": 6,
+                    "layer": 110
+                },
+                {
+                    "type": "HaloPart",
+                    "progress": "life",
+                    "shapeRotation": -45,
+                    "sides": 3,
+                    "shapes": 2,
+                    "color": "EFEFEFFF",
+                    "colorTo": "FFFFFF80",
+                    "tri": true,
+                    "hollow": true,
+                    "radius": 16,
+                    "radiusTo": 8,
+                    "triLength": 240,
+                    "haloRadius": 0,
+                    "haloRotation": 0,
+                    "haloRotateSpeed": -6,
+                    "layer": 110
+                }
+            ],
+
+            "intervalBullet": {
+                "type": "BasicBulletType",
+                
+                "frontColor": "EFEFEF",    
+                "backColor": "FFFFFF",
+                "lightColor": "FFFFFF", 
+
+                "width": 12,
+                "height": 30,
+                "weaveMag": 4,
+                "weaveScale": 4,
+                "trailColor": "EFEFEF",
+                "trailWidth": 3.75,
+                "trailLength": 37.5,
+
+                "absorbable": false,
+                "reflectable": false,
+                "makeFire": true,
+                "splashDamagePierce": true,
+                "incendAmount": 3,
+                "incendChance": 0.5,
+
+                "lifetime": 100,
+                "damage": 233,
+                "speed": 12,  //150格*8像素, 15*80 = 12*100
+                
+                //"velocityScaleRandMin": 0.4,
+                "splashDamage": 1200,
+                "splashDamageRadius": 64,
+                "hitSound": "shootRipple",
+                "despawnSound": "shootRipple",    
+
+                "hitEffect": {
+                    "type": "MultiEffect",
+                    "effects": [              
+                        {
+                            "type": "ParticleEffect",
+                            "lifetime": 20,
+                            "particles": 1,
+                            "baseLength": 0,
+                            "length": 0,
+                            "region": "circle",
+                            "sizeFrom": 64,
+                            "sizeTo": 64,
+                            "colorFrom": "EFEFEFFF",
+                            "colorTo": "00000000"
+                        },
+                        {
+                            "type": "WaveEffect",
+                            "lifetime": 20,
+                            "sizeFrom": 64,
+                            "sizeTo": 64,
+                            "strokeFrom": 3,
+                            "strokeTo": 0,
+                            "colorFrom": "EFEFEFFF",
+                            "colorTo": "FFFFFF80"
+                        }
+                    ]        
+                },
+                "despawnEffect": {
+                    "type": "MultiEffect",
+                    "effects": [              
+                        {
+                            "type": "ParticleEffect",
+                            "lifetime": 20,
+                            "particles": 1,
+                            "baseLength": 0,
+                            "length": 0,
+                            "region": "circle",
+                            "sizeFrom": 64,
+                            "sizeTo": 64,
+                            "colorFrom": "EFEFEFFF",
+                            "colorTo": "00000000"
+                        },
+                        {
+                            "type": "WaveEffect",
+                            "lifetime": 20,
+                            "sizeFrom": 64,
+                            "sizeTo": 64,
+                            "strokeFrom": 3,
+                            "strokeTo": 0,
+                            "colorFrom": "EFEFEFFF",
+                            "colorTo": "FFFFFF80"
+                        }
+                    ]        
+                }
+            },
+            "bulletInterval": 20,
+            "intervalBullets": 6,
+            "intervalRandomSpread": 180,
+            "intervalSpread": 60,
+            "intervalAngle": 0
+        }
+    },
+    "destroyEffect":{
+        "type": "ParticleEffect",
+        "lifetime": 120,
+        "particles": 1,
+        "baseLength": 0,
+		"length": 0,
+        "region": "circle",
+        "sizeFrom": 20,
+		"sizeTo": 1,
+        "lightColor": "FFFFFFFF",
+        "colorFrom": "FFFFFFFF",
+        "colorTo": "FFFFFFFF"
+    },
+
+}

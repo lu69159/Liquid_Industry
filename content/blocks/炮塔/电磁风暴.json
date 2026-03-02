@@ -1,0 +1,166 @@
+{
+    "name": "电磁风暴",
+    "health": 3200,
+    "size": 4,
+    "range": 768,
+    "reload": 300,
+    "maxAmmo": 15,
+    "ammoPerShot": 3,
+    "recoilTime": 60, //后坐力时间
+    "recoil": 4,
+    "buildCostMultiplier": 0.6,
+    "consumes": {
+        "power": 24,
+        "coolant": {
+            "amount": 1.5,
+            "optional": true
+        }
+    },
+    "coolantMultiplier": 0.35,
+    "shootY": 8,
+    "shoot":{
+        "shots": 1,
+        "firstShotDelay": 30,
+        "shotDelay": 0,
+        "type": "ShootPattern"
+    },
+    "shootSound": "shootFuse",
+    "shootCone": 1,
+	"targetGround": true,
+	"targetAir": true,
+    "inaccuracy": 0,
+	"shake": 6,
+    "rotateSpeed": 4,
+    "ammoTypes":{
+        "固态水":{
+            "type": "BasicBulletType",
+            "damage": 2000,
+            "speed": 12.8,
+            "lifetime": 60,
+            "backColor": "00000000",      // 透明
+            "frontColor": "00000000",     
+            "splashDamage": 1080,
+            "splashDamageRadius": 40,
+            "buildingDamageMultiplier": 0.05,
+            "status": "wet",
+		    "statusDuration": 300,
+            "hitSize": 24,   
+            "hitSound": "shootArc",
+            "despawnSound": "shootArc", //原为spark
+          
+            "intervalBullet": {
+                "type": "LightningBulletType",
+                "damage": 10,
+                "buildingDamageMultiplier": 0.05,
+                "pierceArmor": true,
+                "lightningLength": 5
+            },       
+            "bulletInterval": 3,
+            "intervalBullets": 3,
+            "intervalRandomSpread": 30,
+            "intervalSpread": 60,
+            "intervalAngle": 0,
+
+            "fragBullet":{
+                "type": "LightningBulletType",
+                "damage": 150,
+                "buildingDamageMultiplier": 0.05,
+                "pierceArmor": true,
+                "lightningLength": 25
+            },
+            "fragBullets": 16
+ 
+        }
+    },
+    "shootEffect": {
+        "type": "MultiEffect",
+        "effects": [
+            {
+                "type": "ParticleEffect",
+                "particles": 1,
+                "line": true,
+                "lenFrom": 120,
+                "lenTo": 0,
+                "strokeFrom": 6,
+                "strokeTo": 0,
+                "interp": "pow5Out",
+                "length": 150,
+                "lifetime": 60,
+                "colorFrom": "FFFFFFFF",
+                "colorTo": "FFFFFF40",
+                "cone": 8
+            },
+            {
+                "type": "ParticleEffect",
+                "particles": 4,
+                "line": true,
+                "lenFrom": 40,
+                "lenTo": 0,
+                "strokeFrom": 3,
+                "strokeTo": 0,
+                "interp": "pow3Out",
+                "length": 80,
+                "lifetime": 35,
+                "colorFrom": "FFFFFFFF",
+                "colorTo": "FFFFFF40",
+                "cone": 45
+            },
+            {
+                "type": "ParticleEffect",
+                "particles": 8,
+                "sizeFrom": 2,
+                "sizeTo": 0,
+                "interp": "circleOut",
+                "length": 30,
+                "lifetime": 20,
+                "colorFrom": "FFFFFF",
+                "colorTo": "FFFFFF00",
+                "cone": 180
+            }
+        ]
+    },
+    "destroyBullet": {	
+		"type": "LightningBulletType",
+		"damage": 1000,
+		"lightning": 3,
+		"lightningLength": 60,
+		"lightningColor": "FFFFFF",
+		"despawnSound": "shootArc",
+    	"hitSound": "shootArc",
+		"collides": false,
+		"absorbable": false,
+		"pierceArmor": true,
+		"hitEffect": {
+			"type": "WaveEffect",
+			"lifetime": 5,
+			"sizeFrom": 0,
+			"sizeTo": 8,
+			"strokeFrom": 1,
+			"strokeTo": 0,
+			"colorFrom": "FFFFFFFF",
+			"colorTo": "FFFFFF40"
+		},
+		"despawnEffect": "none"
+	},
+    "destroyBulletSameTeam": true,
+    "requirements": [
+		"lead/1500",
+        "metaglass/1000",
+        "silicon/750",
+        "graphite/750",
+        "surge-alloy/750",
+        "亲水质/150",
+        "固态水/20"
+	],
+    
+	"category": "turret",
+    "research": {
+		"parent": "foreshadow",
+		"objectives": [
+			{
+				"type": "SectorComplete",
+				"preset": "desolateRift"
+			}
+		]
+	}
+}

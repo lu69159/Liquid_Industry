@@ -1,0 +1,16 @@
+{
+	"name": "相织装甲储液罐",
+	"health": 840,
+	"size": 1,
+	"armor": 5,
+    "hasLiquids": true,
+    "liquidCapacity": 500,
+	"requirements": [
+        "metaglass/8",
+		"phase-fabric/6",
+		"亲水质/1"         
+	],
+	"chanceDeflect": 20,
+	"category": "defense",
+	"research": "phase-wall"
+}

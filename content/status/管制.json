@@ -1,0 +1,26 @@
+{
+    //"type": "StatusEffect",
+    "name": "管制",
+    "description": "[red]空 中 管 制\n[red]禁 止 飞 行",
+    "color": "FF5050",
+	"healthMultiplier": 0.6,
+    "reloadMultiplier": 0.5,
+	"speedMultiplier": 0.4,
+    "effectChance": 0.2,
+    "effect": {
+		"type": "ParticleEffect",
+		"particles": 1,
+		"baseLength": 15,
+		"length": -9,
+		"lifetime": 45,
+		"spin": 3,
+		"region": "液体工艺-square-k",
+		"interp":"pow3Out",
+		"sizeInterp":"pow5In",
+		"sizeFrom": 2,
+		"sizeTo": 0,
+		"lightColor": "FF5050FF",
+		"colorFrom": "FF5050FF",
+		"colorTo": "FF505070"
+	}
+}

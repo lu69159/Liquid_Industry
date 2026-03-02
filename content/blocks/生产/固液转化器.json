@@ -1,0 +1,64 @@
+{
+    "name": "固液转化器",
+    "size": 3,
+    "health": 300,
+    "hasPower": true,
+	"hasLiquids": true,
+	"hasItems": true,
+    "itemCapacity": 5,
+	"liquidCapacity": 1500,
+    "requirements": [
+		"metaglass/300",
+        "titanium/240",
+        "silicon/300",
+        "亲水质/50"
+	],
+    "category": "crafting",
+    "research": {
+        "parent": "亲水质合成器",
+        "objectives": [
+			{
+				"type": "SectorComplete",
+				"preset": "extractionOutpost"
+			}
+		]
+    },
+
+    "drawer": {
+        "type": "DrawMulti",
+        "drawers": [
+            {
+                "type": "DrawRegion",
+                "suffix": "-bottom"
+            },
+            {
+                "type": "DrawBubbles"
+            },
+            {
+                "type": "DrawLiquidTile",
+                "drawLiquid": "water"
+            },
+            {
+                "type": "DrawLiquidTile",
+                "drawLiquid": "重水"
+            },
+            {
+                "type": "DrawLiquidTile",
+                "drawLiquid": "cryofluid"
+            },
+            {
+                "type": "DrawLiquidTile",
+                "drawLiquid": "oil"
+            },
+            {
+                "type": "DrawLiquidTile",
+                "drawLiquid": "超级冷冻液"
+            },
+            "DrawDefault"
+        ]
+    }
+}
+
+
+	
+

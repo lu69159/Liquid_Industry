@@ -1,0 +1,13 @@
+{
+"name":"超导质",
+"description":"固态水在高电压下裂解反应产物。用于后期的电力储存和传输。",
+"color":"8EFFEAFF",
+"charge":1.5,
+"explosiveness":0,
+"flammability":0,
+"radioactivity":0,
+"hardness":1,
+"cost":1.4,
+"alwaysUnlocked":false,
+"research":"固态水"
+}

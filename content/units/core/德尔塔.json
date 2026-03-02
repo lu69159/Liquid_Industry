@@ -1,0 +1,95 @@
+{
+    //"type": "payload",
+    "name": "德尔塔",
+    "description": "巨像改装版，保护雷霆核心，可建造建筑。",
+    "flying": true,
+    "lowAltitude": true,  
+    "faceTarget": false,
+    "mineSpeed": 8.5,
+    "mineTier": 3,
+    "buildSpeed": 2.6,
+    "drag": 0.017,
+    "speed": 3.7,
+    "rotateSpeed": 20,
+    "accel": 0.06,
+    "fogRadius": 0,
+    "itemCapacity": 90,
+    "payloadCapacity": 256, //(2 * 2) * tilePayload, tilePayload = 64
+    "health": 520,
+    "armor": 3,
+    "engineSize": 3,
+    "engineOffset": 10.5,
+    "hitSize": 16.05,
+    "ammoType": {
+        "type": "PowerAmmoType",
+        "totalPower": 1200
+    },
+    "immunities": [
+        "freezing"
+    ],
+    "abilities": [
+        {
+            "type": "EnergyFieldAbility",
+            "effectRadius": 2,
+            "color": "00FFFFEF",
+            "range": 160,
+            "reload": 90,
+            "hitUnits": true,
+            "hitBuildings": true,
+            "targetAir": true,
+            "targetGround": true,
+            "shootSound": "shootArc",    
+            "maxTargets": 8,
+            "damage": 40,
+            "healPercent": 1,
+            "sameTypeHealMult": 0.1,
+            "status": "shocked"
+        }
+	],
+    "weapons":[
+        {
+            "name": "德尔塔1",
+            "shootSound": "shootLaser",
+            "reload": 12,
+            "x": 8,
+            "y": -6,
+            "rotate": true,
+            "bullet": {
+                "type": "LaserBoltBulletType",
+                "speed":5.2,
+                "damage": 15,
+                "healPercent": 5,
+                "lifetime": 35,
+                "collidesTeam": true,
+                "backColor": "00FFFFEF",
+                "frontColor": "FFFFFFFF",
+                "status": "shocked",
+                "statusDuration": 300,
+                "buildingDamageMultiplier": 0.01,
+                "homingPower": 0.04
+            }
+        },
+        {
+            "name": "德尔塔1",
+            "shootSound": "shootLaser",
+            "reload": 7.5,
+            "x": 4,
+            "y": 5,
+            "rotate": true,
+            "bullet": {
+                "type": "LaserBoltBulletType",
+                "speed":5.2,
+                "damage": 10,
+                "healPercent": 3,
+                "lifetime": 35,
+                "collidesTeam": true,
+                "backColor": "00FFFFEF",
+                "frontColor": "FFFFFFFF",
+                "status": "shocked",
+                "statusDuration": 300,
+                "buildingDamageMultiplier": 0.01,
+                "homingPower": 0.04
+            }
+        }
+    ]
+}

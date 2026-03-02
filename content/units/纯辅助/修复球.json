@@ -1,0 +1,67 @@
+{
+    "name": "修复球",
+    "description": "修复己方受损的建筑。",
+    "research": "辅助工厂",
+    "health": 1000,
+    "armor": 0,
+    "hitSize": 4,
+    "speed": 2.7,
+    "accel": 0.08,
+    "drag": 0.04,
+    "itemCapacity": 0,
+    "fogRadius": 0,
+    "flying": true,
+    "faceTarget": true,
+    "targetGround": false,
+	"targetAir": false,
+    "isEnemy": false,
+    "controller": "RepairAI",
+    "trailLength": 10,
+	"trailWidth": 2,
+    "trailColor": "FFD37F",
+    "outlineColor": "00000000",
+
+    "weapons": [
+        {
+            "x": 0,
+            "y": 0,
+            "mirror": false,
+            "reload": 20,
+            "bullet": {
+                "type": "BasicBulletType",
+                "collidesTeam": true,
+                "collidesAir": false,
+                "damage": 0,
+                "healPercent": 5,
+                "trailLength": 1.5,
+                "trailColor": "6BC583",
+                "frontColor": "84F491",
+                "backColor": "6BC583",
+                "width": 4,
+                "height": 14,
+                "speed": 15,
+                "lifetime": 16,
+                "hitEffect": {
+                    "type": "WaveEffect",
+                    "lifetime": 16,
+                    "sizeFrom": 1,
+                    "sizeTo": 8,
+                    "strokeFrom": 1,
+                    "strokeTo": 0,
+                    "colorFrom": "84F491FF",
+                    "colorTo": "84F49139"
+                },
+                "despawnEffect": {
+                    "type": "WaveEffect",
+                    "lifetime": 16,
+                    "sizeFrom": 1,
+                    "sizeTo": 8,
+                    "strokeFrom": 1,
+                    "strokeTo": 0,
+                    "colorFrom": "84F491FF",
+                    "colorTo": "84F49139"
+                }
+            }
+        }
+    ] 
+}

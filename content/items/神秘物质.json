@@ -1,0 +1,17 @@
+{
+"name":"神秘物质",
+"description":"???",
+"color":"FFFFFFFF",
+"charge":10,
+"explosiveness":0,
+"flammability":0,
+"radioactivity":50,
+"hardness":1,
+"cost":2,
+"alwaysUnlocked":false,
+"research":"超浓缩精华液",
+
+"frames":19,
+"transitionFrames":1,
+"frameTime":3
+}

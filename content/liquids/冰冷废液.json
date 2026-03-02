@@ -1,0 +1,14 @@
+{
+	"name": "冰冷废液",
+	"description": "于尼普顿发现的液态形式的低温废料，尚未知道其形成原理。",
+	"alwaysUnlocked":false,
+	"lightColor":"E0B28D01",
+	"color": "9B928BFF",
+	"flammability": 0,
+	"temperature": 0.1,
+	"heatCapacity": 0.5,
+	"viscosity": 0.5,
+	"boilPoint": 2,
+	"research": "微型核心基座",
+	"coolant": false
+}

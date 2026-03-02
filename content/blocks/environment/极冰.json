@@ -1,0 +1,16 @@
+{
+    "type": "Floor",
+    "name": "极冰",
+    "variants":3,
+    "dragMultiplier": 0.2,
+    "speedMultiplier": 0.8,
+    "albedo": 0.7,
+    "attributes": {
+        "water": 0.8,
+        "cryofluid": 1
+    }
+}
+
+
+
+

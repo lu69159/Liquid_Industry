@@ -1,0 +1,14 @@
+{
+	"name": "四级浓缩精华液",
+	"description": "神秘物质浓度已达到提取的最低标准的浓缩液体。",
+	"alwaysUnlocked":false,
+	"lightColor":"FFFFFF30",
+	"color": "C7C9DCFF",
+	"flammability": 0,
+	"temperature": 0.8,
+	"heatCapacity": 0.12,
+	"viscosity": 0.85,
+	"boilPoint": 2,
+	"research": "三级精华废液",
+	"coolant": false
+}

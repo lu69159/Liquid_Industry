@@ -1,0 +1,28 @@
+{
+    //"type": "CoreBlock",
+    //"PowerProduction": 3.33333, //200电力
+    "name":"闪电核心",
+    "size": 5,
+    "health": 8000,
+    "armor":10,
+    "hasPower": true,
+    "consumesPower": false,
+    "outputsPower": true,
+    "rebuildable": false,
+    "replaceable": true,
+    "itemCapacity": 18000,	
+	"requirements": [
+        "copper/12000",
+        "lead/12000",
+        "titanium/8000",
+        "thorium/4000",
+        "silicon/7000",
+        "plastanium/500",
+        "surge-alloy/1500"
+	],
+	"unitType": "伽马-S",
+	"unitCapModifier": 36,
+    "researchCostMultiplier": 0.5,
+	"category": "effect",
+    "research": "微型核心基座"
+}

@@ -1,0 +1,27 @@
+{
+    "name": "保护投影",
+    "size": 2,
+    "health": 260,
+    "range": 120,
+    "useTime": 600,
+    "reload": 240,
+    "consumes": {
+        "power": 2
+    },
+    "requirements": [
+        "lead/100",
+        "graphite/75",
+        "silicon/40",
+        "phase-fabric/10"
+    ],
+    "category": "effect",
+    "research": {
+		"parent": "超频投影",
+		"objectives": [
+			{
+				"type": "SectorComplete",
+				"preset": "极冰溶洞"
+			}
+		]
+	},
+}

@@ -1,0 +1,77 @@
+{
+	"name": "废液离心机",
+    "description": " 初步将冰冷废液提炼为一级精炼废液和废料。",
+    "size": 3,
+	"health": 280,
+    "hasItems": true,
+	"hasLiquids": true,
+    "hasPower": true,
+    "outputsLiquid": true,
+    "itemCapacity": 30,
+    "liquidCapacity": 90,
+    "craftTime": 60,
+    "craftEffect": "none",
+    "fogRadius": 3,
+    "category": "crafting",
+
+    "research": {
+		"parent": "冰冷废液分离机",
+		"objectives": [
+			{
+				"type": "SectorComplete",
+				"preset": "狭长冰谷"
+			}
+		]
+	},
+
+    "consumes": {
+		"power": 2.8,
+		"liquid": "冰冷废液/1.8"
+	},
+    "outputLiquid": {
+		"liquid": "一级精炼废液",
+		"amount": 0.8
+	},
+    "outputItems": [
+        "scrap/15"
+    ],
+    "requirements": [
+        "copper/75",
+        "lead/55",
+        "titanium/20",
+        "metaglass/10",
+        "亲水质/1"
+	],
+
+    "drawer": {
+        "type": "DrawMulti",
+        "drawers": [
+            {
+                "type": "DrawRegion",
+                "suffix": "-bottom"
+            },
+            {
+                "type": "DrawArcSmelt",
+                "flameColor": "989BAD80"
+            },
+            {
+                "type": "DrawBubbles"
+            },
+            {
+                "type": "DrawLiquidTile",
+                "drawLiquid": "冰冷废液"
+            },
+            {
+                "type": "DrawLiquidTile",
+                "drawLiquid": "一级精炼废液"
+            },
+            {
+                "type": "DrawRegion",
+                "suffix": "-rotator",
+                "spinSprite": true,
+                "rotateSpeed": 10
+            },
+            "DrawDefault"
+        ]
+    }
+}

@@ -1,0 +1,34 @@
+{
+    "name":"作弊炮塔",
+    "health": 55555,
+    "armor": 666666,
+    "category": "turret",
+    "range": 12000,
+    "reload": 60,
+    "recoilTime": 60, //后坐力时间
+    "recoil": 1,
+    "consumes": {
+
+    },
+    "connectedPower": false,
+    "shootY": 1,
+    "shoot":{
+        "shots": 1,
+        "shotDelay": 0,
+        "type": "ShootPattern"
+    },
+    "shootSound": "FFF",
+    "shootType": {
+        "type": "BasicBulletType",
+        "width": 36,
+		"height": 72,
+        "damage": 114514,
+        "splashDamage": 1919810,
+        "splashDamageRadius": 12000,
+        "speed": 25,
+        "lifetime": 400,
+        "hitSound": "FFF",
+        "hitSoundVolume": 0.8
+        
+    }
+}

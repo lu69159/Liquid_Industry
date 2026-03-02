@@ -1,0 +1,78 @@
+{
+    "name":"终能聚合器",
+    "description":"消耗大量资源和电力，只为提取神秘物质。\n不及时处理积累的液体副产物会导致爆炸。",
+    "size": 3,
+    "health": 1860,
+    "hasItems": true,
+	"hasLiquids": true,
+    "hasPower": true,
+    "outputsLiquid": true,
+    "itemCapacity": 60,
+    "liquidCapacity": 600, 
+    "category": "crafting",
+    "research": "精华浓缩厂",
+    "craftTime": 3600,
+    "buildCostMultiplier": 2,
+    "requirements": [
+        "copper/600",
+        "lead/600",
+        "titanium/400",
+        "thorium/400",
+        "亲水质/200",
+        "超导质/80",
+        "surge-alloy/225",
+        "固态超级冷冻液/25"
+	],
+    "consumes": {
+		"power": 88,
+        "items":[
+            "copper/60",
+            "lead/60",
+            "titanium/40",
+            "thorium/40",
+            "亲水质/20"
+        ],
+		"liquids": [
+            "四级浓缩精华液/0.4",
+            "cryofluid/5"
+        ]
+	},
+    "outputItems": [
+        "神秘物质/1"
+    ],
+    "outputLiquids": [
+        "衰变熔岩/0.3"
+    ],
+
+    "craftEffect": "none",
+    "updateEffectChance": 0.2,
+    "updateEffect":{
+        "type": "ParticleEffect",
+		"particles": 3,
+        "offset": 0,
+		"baseLength": 40,
+		"length": -40,
+		"lifetime": 60,
+		"spin": 3,
+		"interp":"pow5Out",
+		"sizeInterp":"pow3In",
+		"region": "circle-small",
+		"sizeFrom": 1,
+		"sizeTo": 0,
+		"colorFrom": "DFDFDF80",
+		"colorTo": "FFFFFF80"
+    },
+    "drawer": {
+        "type": "DrawMulti",
+        "drawers": [
+            "DrawDefault",
+            {
+                "type": "DrawCrucibleFlame",
+                "flameColor": "FFFFFF80",
+                "midColor": "00000000",
+                "particleSize": 2,
+                "particleRad": 45
+            }
+        ]
+    }
+}

@@ -1,0 +1,59 @@
+{
+	"name": "冷冻液搅拌机",
+    "description": "利用钛、亲水质和冷冻液之间的反应，将少量冷冻液转化为更多的冷冻液。",
+    "size": 3,
+	"health": 360,
+    "hasItems": true,
+	"hasLiquids": true,
+    "hasPower": true,
+    "outputsLiquid": true,
+    "itemCapacity": 20,
+    "liquidCapacity": 500,
+    "craftTime": 240,
+    "updateEffect": "freezing",
+	"consumes": {
+		"power": 2.5,
+		"items": [
+			"titanium/12",
+            "亲水质/1"
+		],
+		"liquid": "cryofluid/0.1"
+	},
+    "outputLiquid": {
+		"liquid": "cryofluid",
+		"amount": 2
+	},
+    "requirements": [
+        "lead/200",
+		"thorium/120",
+		"metaglass/40",
+		"silicon/40",
+        "亲水质/5"
+	],
+    "category": "crafting",
+	"research": "cryofluid-mixer",
+
+    "drawer": {
+        "type": "DrawMulti",
+        "drawers": [
+            {
+                "type": "DrawRegion",
+                "suffix": "-bottom"
+            },
+            {
+                "type": "DrawBubbles"
+            },
+            {
+                "type": "DrawLiquidTile",
+                "drawLiquid": "cryofluid"
+            },
+            {
+                "type": "DrawBlurSpin",
+                "suffix": "-suffix",
+                "rotateSpeed": 15,
+                "blurThresh": 10
+            },
+            "DrawDefault"
+        ]
+    }
+}

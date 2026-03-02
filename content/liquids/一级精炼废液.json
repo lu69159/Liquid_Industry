@@ -1,0 +1,14 @@
+{
+	"name": "一级精炼废液",
+	"description": "冰冷废液初步提炼的液态产物，金属成分浓度已经足以被提取。",
+	"alwaysUnlocked":false,
+	"lightColor":"989BAD20",
+	"color": "848695FF",
+	"flammability": 0,
+	"temperature": 0.15,
+	"heatCapacity": 0.4,
+	"viscosity": 0.6,
+	"boilPoint": 2,
+	"research": "冰冷废液",
+	"coolant": false
+}

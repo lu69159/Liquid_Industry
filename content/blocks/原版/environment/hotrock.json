@@ -1,0 +1,7 @@
+{
+    "attributes": {
+        "heat": 0.5,
+        "water": -0.5,
+        "cryofluid": -0.75
+    }
+}

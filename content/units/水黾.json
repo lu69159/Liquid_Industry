@@ -1,0 +1,58 @@
+{
+    "name": "水黾",
+    "hovering": true,  
+    "canDrown": false,
+    "research": "naval-factory",
+    "squareShape": true,
+	"omniMovement": true,
+	"rotateMoveFirst": true,
+    "rotateSpeed": 12,
+	"speed": 3.5,
+    "hitSize": 9,
+    "ammoCapacity": 20,
+	"health": 220,
+	"armor": 6,
+	"drag": 0.1,
+	"accel": 0.2,
+    "itemCapacity": 0,
+	"faceTarget": false,
+    "targetAir": false,
+    "targetGround": true,
+    "targetFlags": [
+        "turret",
+		"core"
+	],
+    "immunities": [
+        "freezing"
+    ],
+    "requirements": {
+		"block": "naval-factory",
+		"time": 1800,
+		"requirements": [
+			"silicon/10",
+            "亲水质/15"
+        ]
+    },
+    "weapons": [
+		{
+            "name": "水黾1",
+            "reload": 20,
+            "recoil": 0.5,
+            "x": 0,
+            "y": 0,
+            "rotate": true,
+            "rotateSpeed": 12,
+            "mirror": false,
+            "inaccuracy": 0,
+            "ejectEffect": "sparkShoot",
+            "shootSound": "shootArc",
+            "alternate": false,
+            "bullet": {
+                "type": "LightningBulletType",
+                "damage": 15,
+                "collidesAir": false,
+                "lightningLength":25     
+            }    
+        }
+    ]
+}

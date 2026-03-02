@@ -1,0 +1,58 @@
+{
+	"name": "三级精华转化器",
+    "size": 5,
+	"health": 1280,
+    "hasPower": true,
+	"hasLiquids": true,
+    "itemCapacity": 20,
+    "liquidCapacity": 40,
+    "category": "crafting",
+    "research": "精华提取工厂",
+    "craftTime": 6.6,
+    "consumes": {
+		"power": 8.8,
+		"liquid": {
+			"liquid": "三级精华废液",
+			"amount": 0.15
+		}
+	},
+    "requirements": [
+        "titanium/325",
+        "thorium/205",
+        "metaglass/65",
+        "silicon/85",
+        "plastanium/35",
+        "超导质/1"
+	],
+    "results": [
+        {"item": "phase-fabric","amount": 5},
+        {"item": "plastanium","amount": 5},
+        {"item": "surge-alloy","amount": 4},
+        {"item": "亲水质","amount": 1}
+    ],
+    "drawer": {
+        "type": "DrawMulti",
+        "drawers": [
+            {
+                "type": "DrawRegion",
+                "suffix": "-bottom"
+            },
+            {
+                "type": "DrawLiquidTile",
+                "drawLiquid": "三级精华废液",
+                "padding": 6
+            },
+            {
+                "type": "DrawRegion",
+                "suffix": "-rotator",
+                "spinSprite": true,
+                "rotateSpeed": 10
+            },    
+            "DrawDefault",
+            {
+				"type": "DrawFade",
+				"suffix": "-glow"
+			}
+        ]
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "type": "Floor",
+    "name": "冰沙",
+    "variants":3,
+    "itemDrop": "sand",
+    "playerUnmineable": true,
+    "attributes": {
+        "oil": 0.55,
+        "water": 0.2,
+        "cryofluid": 0.1
+    }
+}

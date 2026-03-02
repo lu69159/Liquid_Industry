@@ -1,0 +1,14 @@
+{
+	"name": "超级冷冻液",
+	"description": "冷冻液pro max！",
+	"alwaysUnlocked":false,
+	"effect": "unmoving",
+	"lightColor":"D8F3FF66",
+	"color": "C0ECFFFF",
+	"flammability": 0, 
+	"temperature": 0.01,
+	"heatCapacity": 2.1,
+	"viscosity": 0.5,
+	"boilPoint": 0.6,
+	"research": "三级精华废液"
+}

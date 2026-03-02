@@ -1,0 +1,14 @@
+{
+	"name": "三级精华废液",
+	"description": "从冰冷废液中多次提纯的，包含低浓度神秘物质的液体。",
+	"alwaysUnlocked":false,
+	"lightColor":"FFFFFF10",
+	"color": "B7BADAFF",
+	"flammability": 0,
+	"temperature": 0.5,
+	"heatCapacity": 0.2,
+	"viscosity": 0.75,
+	"boilPoint": 2,
+	"research": "二级精炼废液",
+	"coolant": false
+}

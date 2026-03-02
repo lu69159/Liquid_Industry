@@ -1,0 +1,14 @@
+{
+    "name": "大型超导节点",
+    "health": 480,
+    "size": 2,
+    "laserRange": 45,
+    "maxNodes": 30,
+    "requirements": [
+        "titanium/4",
+        "silicon/5",
+        "超导质/2"
+    ],
+    "category": "power",
+    "research": "超导节点"
+}

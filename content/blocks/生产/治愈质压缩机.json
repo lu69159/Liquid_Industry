@@ -1,0 +1,64 @@
+{
+    "description": "将相织布与亲水质在高压下混合反应形成治愈质，使用冷冻液吸收反应时的热量以控制反应温度。",
+	"name": "治愈质压缩机",
+    "health": 900,
+    "size": 4,
+    "hasPower": true,
+	"hasItems": true,
+    "itemCapacity": 20,
+	"hasLiquids": true,
+	"liquidCapacity": 60,
+    "requirements": [
+        "lead/300",
+        "metaglass/180",
+		"graphite/150",
+        "silicon/120",
+        "thorium/50"
+	],
+    "consumes": {
+		"power": 11.2,
+		"items": [
+            "亲水质/8",
+            "phase-fabric/6"
+		],
+		"liquids": [
+			"cryofluid/0.5"
+		]
+	},
+    "outputItems": [
+        "治愈质/6"
+    ],
+    "craftTime": 360,
+    "category": "crafting",
+    "research": "亲水质合成器",
+
+    "craftEffect":{
+        "type": "MultiEffect",
+        "effects": [
+            {
+                "type": "drillSteam"
+            },
+            {
+                "type": "steam"
+            }
+        ]
+    },
+
+    "drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+            {
+                "type": "DrawRegion",
+                "suffix": "-bottom"
+            },
+            "DrawFlame",
+            {
+				"type": "DrawLiquidTile",
+                "drawLiquid": "cryofluid"
+			},
+            "DrawDefault"
+
+			
+		]
+	}
+}

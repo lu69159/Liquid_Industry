@@ -1,0 +1,13 @@
+{
+	"name": "钍传送带",
+	"health": 95,
+	"requirements": [
+		"copper/1",
+		"lead/1",
+        "thorium/1"
+	],
+	"category": "distribution",
+	"research":"titanium-conveyor",
+	"speed": 0.3,
+	"displayedSpeed": 30
+}

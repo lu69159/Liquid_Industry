@@ -1,0 +1,39 @@
+{
+    "name": "硅炉",
+    "size": 2,
+    "health": 180,
+    "hasPower": true,
+    "hasLiquids": false,
+    "itemCapacity": 12,
+    "requirements": [
+        "copper/30",
+        "lead/25",
+        "graphite/10"
+	],
+    "craftTime": 40,
+    "consumes": {
+		"power": 1.25,
+		"items": [
+            "graphite/1",
+            "sand/4"
+		]
+	},
+    "outputItems": [
+        "silicon/2"
+    ],
+    "category": "crafting",
+	"research": "冰冷废液分离机",
+    
+    "ambientSound": "loopSmelter",
+    "ambientSoundVolume": 0.07,
+    
+    "craftEffect": "smeltsmoke",
+
+    "drawer": {
+        "type": "DrawMulti",
+        "drawers": [
+            "DrawDefault",
+            "DrawFlame"
+        ]
+    }   
+}

@@ -1,0 +1,74 @@
+{
+	"name": "精华浓缩厂",
+    "description": "继续浓缩三级废液中的精华物质以提取神秘物质。",
+    "size": 4,
+	"health": 1200,
+    "hasItems": false,
+	"hasLiquids": true,
+    "hasPower": true,
+    "outputsLiquid": true,
+    "itemCapacity": 16,
+    "liquidCapacity": 80,
+    "category": "crafting",
+    "research": "精华提取工厂",
+    "craftTime": 120,
+    "consumes": {
+		"power": 16.4,
+		"liquids": [
+            "三级精华废液/0.6",
+            "oil/0.8"
+        ],
+        "items":[
+            "亲水质/4"
+        ]
+	},
+    "requirements": [ 
+        "copper/680",
+        "lead/420",
+        "titanium/400",
+        "metaglass/125",
+        "graphite/205",
+        "silicon/180",
+        "plastanium/105",
+        "超导质/15"
+	],
+    "outputLiquids": [
+        "四级浓缩精华液/0.2"
+    ],
+    "lightLiquid": "四级浓缩精华液",
+
+    "craftEffect": "none",
+    "drawer": {
+        "type": "DrawMulti",
+        "drawers": [
+            {
+                "type": "DrawRegion",
+                "suffix": "-bottom"
+            }, 
+            {
+                "type": "DrawLiquidTile",
+                "drawLiquid": "oil"
+            },
+            {
+                "type": "DrawLiquidTile",
+                "drawLiquid": "三级精华废液"
+            },
+            {
+                "type": "DrawLiquidTile",
+                "drawLiquid": "四级浓缩精华液"
+            },      
+            {
+                "type": "DrawCrucibleFlame",
+                "flameColor": "C7C9DCEE",
+                "midColor": "FFFFFFEE"
+            },
+            {
+                "type": "DrawPistons",
+                "sinMag": 6,
+                "sinScl": 3,
+                "sideOffset": 180
+            },
+            "DrawDefault"
+        ]
+    }
+}

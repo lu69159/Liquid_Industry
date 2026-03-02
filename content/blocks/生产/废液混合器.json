@@ -1,0 +1,48 @@
+{
+	"name": "废液混合器",
+    "description": "将废料和冷冻液混合成废液。",
+    "size": 2,
+	"health": 180,
+    "hasItems": true,
+	"hasLiquids": true,
+    "hasPower": true,
+    "outputsLiquid": true,
+    "itemCapacity": 15,
+    "liquidCapacity": 60,
+    "craftTime": 180,
+	"consumes": {
+		"power": 1.5,
+		"items": [
+			"scrap/6"
+		],
+		"liquids": [
+            "cryofluid/0.15"
+		]
+	},
+    "outputLiquid": {
+		"liquid": "冰冷废液",
+		"amount": 0.3
+	},
+    "requirements": [
+        "lead/65",
+        "silicon/40",
+        "thorium/15"
+	],
+    "category": "crafting",
+	"research": "废液离心机",
+
+    "drawer": {
+        "type": "DrawMulti",
+        "drawers": [
+            {
+                "type": "DrawRegion",
+                "suffix": "-bottom"
+            },
+            {
+                "type": "DrawLiquidTile",
+                "drawLiquid": "冰冷废液"
+            },
+            "DrawDefault"
+        ]
+    }
+}

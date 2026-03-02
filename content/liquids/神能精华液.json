@@ -1,0 +1,16 @@
+{
+	"name": "神能精华液",
+	"description": "纯净的神能精华。",
+	"alwaysUnlocked":false,
+    //"effect": "神佑",
+	"lightColor":"FFFFFFFF",
+	"color": "FFFFFFFF",
+	"flammability": 0,
+    "explosiveness": 0,
+	"temperature": 3,
+	"heatCapacity": 0.01,
+	"viscosity": 0.95,
+	"boilPoint": 6,
+	"research": "超浓缩精华液",
+	"coolant": false
+}

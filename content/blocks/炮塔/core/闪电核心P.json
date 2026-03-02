@@ -1,0 +1,36 @@
+{
+    "name": "闪电核心P",
+    "health": 1,
+    "size": 5,
+    "hasPower": true,
+    "rotateSpeed": 60,
+    "range": 96,
+    "armor":30,
+	"canOverdrive": false,
+    "recoil": 0,
+    "targetGround": true,
+	"targetAir": true,
+    "playerControllable": false,
+    "destroyEffect": "none",
+    "consumes":{},
+    "shootSound": "none",
+    "shootY": 0,
+    "shoot":{
+        "shots": 1,
+        "firstShotDelay": 0,
+        "shotDelay": 0,
+        "type": "ShootPattern"
+    },
+    "reload": 180,       
+    "shootType":{
+        "spawnUnit": "闪电核心PM",
+        "speed": 0,
+        "lifetime": 185,
+        "shootEffect": "none",
+        "smokeEffect": "none",
+        "collides": false
+        
+    },
+    
+    "buildVisibility":"hidden"
+}

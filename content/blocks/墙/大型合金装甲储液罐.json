@@ -1,0 +1,19 @@
+{
+	"name": "大型合金装甲储液罐",
+	"health": 4400,
+	"size": 2,
+	"armor": 10,
+    "hasLiquids": true,
+    "liquidCapacity": 2000,
+	"requirements": [
+        "metaglass/32",
+		"titanium/24",
+		"surge-alloy/24",
+		"亲水质/4"         
+	],
+	"lightningChance": 0.05,
+	"lightningLength": 25,
+	"lightningDamage": 50,
+	"category": "defense",
+	"research": "合金装甲储液罐"
+}

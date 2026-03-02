@@ -1,0 +1,82 @@
+{
+    "type": "crawl",
+    "name": "埋伏-地雷2",
+    "health": 2160,
+    "armor": 10,
+	"speed": 0,
+    "rotateSpeed": 0,
+    "hitSize": 8,  
+    "drawCell": false,
+    "createWreck": false,
+    "createScorch": false,
+    "logicControllable": false,
+    "playerControllable": false,
+    "isEnemy": false,
+    "hittable": false,
+    "targetable": false,
+    "useUnitCap": false,
+    "drawMinimap": false,
+    "targetAir": false,
+    "targetGround": true,
+    "hidden": true,
+    "immunities": [
+		"burning",
+		"freezing",
+        "unmoving",
+        "slow",
+        "fast",
+        "wet",
+		"melting",
+		"sapped",
+        "electrified",
+        "spore-slowed", 
+		"tarred",
+		"overdrive",
+		"overclock",
+        "shielded",
+        "boss",
+        "shocked",
+        "blasted",
+        "corroded",
+        "disarmed"
+	],  
+    "abilities": [
+        {
+            "type": "RegenAbility",
+            "amount": -0.3,
+            "display": false
+        }
+    ],
+    "weapons": [
+        {
+            "reload": 180,
+            "shootCone": 360,
+            "mirror": false,
+            "shootOnDeath": true,   
+            "bullet": {
+                "type": "BasicBulletType",
+
+                "ammoMultiplier": 4,
+
+                "collidesTiles": false,
+                "rangeOverride": 24,
+                "hitEffect": "explosion",
+                "speed": 0,
+                "splashDamageRadius": 96,
+                "instantDisappear": true,
+                "splashDamage": 300,
+                "killShooter": true,
+                "hittable": false,
+                "collidesAir": false,
+
+                "makeFire": true,
+                "incendAmount": 3,
+                "incendChance": 0.8,
+
+                "status": "melting",
+                "statusDuration": 300
+            }
+        }
+    ],
+    "hideDatabase": false
+}

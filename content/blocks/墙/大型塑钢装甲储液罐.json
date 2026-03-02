@@ -1,0 +1,18 @@
+{
+	"name": "塑钢装甲储液罐",
+	"health": 2560,
+	"size": 2,
+	"armor": 5,
+	"absorbLasers": true,
+	"insulated":true,
+    "hasLiquids": true,
+    "liquidCapacity": 2000,
+	"requirements": [
+        "metaglass/32",
+		"titanium/24",
+		"plastanium/20",
+		"亲水质/4"         
+	],
+	"category": "defense",
+	"research": "塑钢装甲储液罐"
+}

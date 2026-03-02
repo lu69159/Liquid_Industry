@@ -1,0 +1,19 @@
+{
+	"name": "合金装甲储液罐",
+	"health": 1100,
+	"size": 1,
+	"armor": 10,
+    "hasLiquids": true,
+    "liquidCapacity": 500,
+	"requirements": [
+        "metaglass/8",
+		"titanium/6",
+        "surge-alloy/6",
+		"亲水质/1"         
+	],
+	"lightningChance": 0.05,
+	"lightningLength": 25,
+	"lightningDamage": 50,
+	"category": "defense",
+	"research": "surge-wall"
+}

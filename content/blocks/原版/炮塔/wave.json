@@ -1,0 +1,59 @@
+{
+	"smokeEffect":"none",
+	"shootEffect":"none",
+	"liquidCapacity": 20,
+	"ammoTypes": {
+		"water":{
+			"type": "LiquidBulletType",
+			"liquid": "water",	
+			"status":"wet",
+			"statusDuration":120,
+			"knockback":0.7,
+			"drag":0.01,
+			"layer":98
+		},
+		"slag":{
+			"type": "LiquidBulletType",
+			"damage":4,
+			"liquid": "slag",
+			"status": "melting",
+			"statusDuration": 120,
+			"knockback":0.55,
+			"drag":0.01
+		},
+		"衰变熔岩":{
+			"type": "LiquidBulletType",
+			"damage":20,
+			"liquid": "衰变熔岩",
+			"makeFire": true,
+			"status": "burning",
+			"statusDuration": 120,
+			"knockback":0.55,
+			"drag":0.01
+		},
+		"cryofluid":{
+			"type": "LiquidBulletType",
+			"liquid": "cryofluid",
+			"status": "freezing",
+			"statusDuration": 120,
+			"knockback":0.55,
+			"drag":0.01
+		},
+		"oil":{
+			"type": "LiquidBulletType",
+			"liquid": "oil",
+			"status": "tarred",
+			"statusDuration": 120,
+			"drag":0.01,
+			"layer":98
+		},
+		"超级冷冻液": {
+			"type": "LiquidBulletType",
+			"liquid": "超级冷冻液",
+			"status": "unmoving",
+			"statusDuration": 120,
+			"knockback":0.55,
+			"drag": 0.01
+		}
+	}
+}

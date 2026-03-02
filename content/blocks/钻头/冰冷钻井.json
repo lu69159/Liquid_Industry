@@ -1,0 +1,55 @@
+{
+    "name": "冰冷钻井",
+    "health": 540,
+    "size": 3,
+    "hasPower": true,
+	"hasLiquids": true,
+	"liquidCapacity": 30,
+    "baseEfficiency": 1,
+    "pumpAmount": 2.5,
+    "attribute": "cryofluid",
+    "result": "cryofluid",
+    "category": "production",
+	"research": {
+        "parent": "冷冻液抽取机",
+        "objectives": [
+			{
+				"type": "SectorComplete",
+				"preset": "navalFortress"
+			}
+		]
+    },
+
+    "requirements": [
+        "titanium/180",
+        "thorium/125",
+        "metaglass/55",
+        "silicon/75",
+        "固态冷冻液/5"
+    ],
+
+    "consumes":{
+        "power": 7.1,
+        "liquids":[
+            "water/3.5"
+        ]
+    },
+
+    "updateEffect":{
+        "type": "ParticleEffect",
+		"particles": 5,
+		"baseLength": 0,
+		"length": 6,
+		"lifetime": 50,
+		"spin": 0,
+		"region": "液体工艺-square",
+		"interp":"pow3Out",
+		"sizeInterp":"pow5In",
+		"sizeFrom": 2,
+		"sizeTo": 0,
+		"lightColor": "87CEEBFF",
+		"colorFrom": "87CEEBFF",
+		"colorTo": "87CEEBFF"
+    },
+    "updateEffectChance": 0.04
+}

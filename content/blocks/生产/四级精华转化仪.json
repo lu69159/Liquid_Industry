@@ -1,0 +1,63 @@
+{
+	"name": "四级精华转化仪", 
+    "size": 4,
+	"health": 1660,
+    "hasPower": true,
+	"hasLiquids": true,
+    "itemCapacity": 20,
+    "liquidCapacity": 20,
+    "category": "crafting",
+    "research": "精华浓缩厂",
+    "craftTime": 75,
+    "craftEffect": "none",
+    "consumes": {
+		"power": 12.6,
+		"liquid": {
+			"liquid": "四级浓缩精华液",
+			"amount": 0.1
+		}
+	},
+    "requirements": [
+        "titanium/425",
+        "phase-fabric/180",
+        "surge-alloy/205",
+        "plastanium/125",
+        "silicon/275",
+        "亲水质/30",
+        "超导质/10"
+	],
+    "outputItems": [
+        "graphite/5",
+        "silicon/4",
+        "metaglass/4",
+        "titanium/4",
+        "thorium/3",
+        "plastanium/2",
+        "surge-alloy/2",
+        "phase-fabric/2",
+        "亲水质/2"
+    ],
+    "drawer": {
+        "type": "DrawMulti",
+        "drawers": [
+            {
+                "type": "DrawRegion",
+                "suffix": "-bottom"
+            },
+            {
+                "type": "DrawArcSmelt",
+                "flameColor": "C7C9DC80"
+            },
+            {
+                "type": "DrawLiquidTile",
+                "drawLiquid": "四级浓缩精华液",
+                "padding": 6
+            }, 
+            "DrawDefault",
+            {
+				"type": "DrawFade",
+				"suffix": "-glow"
+			}
+        ]
+    }
+}

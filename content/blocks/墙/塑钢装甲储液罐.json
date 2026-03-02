@@ -1,0 +1,18 @@
+{
+	"name": "塑钢装甲储液罐",
+	"health": 640,
+	"size": 1,
+	"armor": 5,
+	"absorbLasers": true,
+	"insulated":true,
+    "hasLiquids": true,
+    "liquidCapacity": 500,
+	"requirements": [
+        "metaglass/8",
+		"titanium/6",
+		"plastanium/5",
+		"亲水质/1"         
+	],
+	"category": "defense",
+	"research": "plastanium-wall"
+}

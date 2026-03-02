@@ -1,0 +1,15 @@
+{
+    "name": "液体卸载器",
+    "health": 100,
+    "size": 1,
+    "hasLiquids": "true",
+    "liquidCapacity": 10,
+    "requirements": [
+        "titanium/20",
+        "silicon/10",
+        "metaglass/15",
+        "亲水质/2"
+    ],
+    "category": "liquid",
+    "research":"liquid-tank"
+}

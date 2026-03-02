@@ -1,0 +1,19 @@
+{
+    "name": "弱化投影",
+    "size": 2,
+    "health": 280,
+    "range": 160,
+    "useTime": 360,
+    "reload": 600,
+    "consumes": {
+        "power": 3
+    },
+    "requirements": [
+        "lead/100",
+        "coal/85",
+        "silicon/40",
+        "phase-fabric/10"
+    ],
+    "category": "effect",
+    "research": "保护投影"
+}

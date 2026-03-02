@@ -1,0 +1,13 @@
+{
+	"name":"巨型储液罐",
+	"size":4,
+	"health": 1200,
+	"liquidCapacity": 9000,
+	"requirements": [
+		"metaglass/120",
+		"titanium/80",
+		"亲水质/2"
+	],
+	"category": "liquid",
+	"research":"liquid-tank"
+	}

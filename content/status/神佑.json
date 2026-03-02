@@ -1,0 +1,13 @@
+{
+    //"type": "StatusEffect",
+    "name": "神佑",
+    "description": "神秘的力量保佑着接触到它的一切！\n期间免疫一切负面状态。\n(包括其他MOD添加的负面状态)",
+    "color": "EFEFEF",
+	"healthMultiplier": 12,
+    "damageMultiplier": 6,
+    "reloadMultiplier": 4,
+    "speedMultiplier": 3,
+    "buildSpeedMultiplier": 2,
+    "damage": -3,
+    "effectChance": 1.0
+}

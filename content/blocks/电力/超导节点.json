@@ -1,0 +1,22 @@
+{
+    "name": "超导节点",
+    "health": 120,
+    "size": 1,
+    "laserRange": 18,
+    "maxNodes": 20,
+    "requirements": [
+        "titanium/1",
+        "lead/2",
+        "超导质/1"
+    ],
+    "category": "power",
+    "research": {
+		"parent": "微型核心基座",
+		"objectives": [
+			{
+				"type": "SectorComplete",
+				"preset": "狭长冰谷"
+			}
+		]
+	},
+}

@@ -1,0 +1,54 @@
+{
+    "name": "冰冷废液分离机",
+    "description": "直接不稳定低效地提取冰冷废液中的可用物质，多余材料会被焚毁。\n可以获取钛。",
+    "size": 2,
+    "health": 180,
+    "hasPower": true,
+	"hasLiquids": true,
+    "itemCapacity": 10,
+	"liquidCapacity": 10,
+    "category": "crafting",
+	"research": "微型核心基座",
+    "craftTime": 40,
+    //"craftEffect": "none",
+    "consumes": {
+		"power": 0.8,
+		"liquid": {
+			"liquid": "冰冷废液",
+			"amount": 0.12
+		}
+	},
+    "requirements": [
+        "copper/40",
+        "lead/20",
+        "graphite/5",
+        "metaglass/5"
+    ],
+    "results": [
+        {"item": "sand","amount": 4},
+        {"item": "copper","amount": 3},
+        {"item": "lead","amount": 3},
+        {"item": "graphite","amount": 2},
+        {"item": "titanium","amount": 1}
+    ],
+
+    "drawer": {
+        "type": "DrawMulti",
+        "drawers": [
+            {
+                "type": "DrawRegion",
+                "suffix": "-bottom"
+            },
+            {
+                "type": "DrawLiquidTile",
+                "drawLiquid": "冰冷废液"
+            },
+            {
+                "type": "DrawBlurSpin",
+                "suffix": "-suffix",
+                "rotateSpeed": 5
+            },
+            "DrawDefault"
+        ]
+    }
+}

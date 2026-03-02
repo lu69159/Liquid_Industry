@@ -1,0 +1,25 @@
+{
+	"name": "冷冻液抽取机",
+	"health": 220,
+	"size": 2,
+	"hasPower": true,
+	"hasLiquids": true,
+	"liquidCapacity": 30,
+	"requirements": [
+		"titanium/40",
+		"thorium/30",
+		"graphite/30",
+		"metaglass/30",
+        "亲水质/5"
+	],
+	"consumes": {
+		"power": 3.25
+	},
+	"pumpAmount": 0.25,
+	"rotateSpeed": 3,
+	"result": "cryofluid",
+	"baseEfficiency": 0,
+	"attribute": "cryofluid",
+	"category": "production",
+	"research": "water-extractor"
+}

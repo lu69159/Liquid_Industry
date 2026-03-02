@@ -1,0 +1,124 @@
+{
+    "name": "埋伏",
+    "health": 1050,
+    "size": 3,
+    "hasPower": true,
+    "rotateSpeed": 2,
+    "range": 400,
+    "recoil": 2,
+    "maxAmmo": 8,
+    "shootCone": 15,
+    "inaccuracy": 5,
+    "connectedPower": false,
+    "targetGround": true,
+	"targetAir": false,
+    "consumes":{
+        "coolant": {
+            "amount": 0.3,
+            "optional": true
+        }
+    },
+    "shootY": 12,
+    "shoot":{
+        "type": "ShootPattern",
+        "shots": 1  
+    },
+    "reload": 180,    
+    "ammoTypes":{
+        "blast-compound":{
+            "type": "ArtilleryBulletType",
+            "backColor": "FF795E",
+            "hitColor": "FF795E",
+            "trailColor": "FF795E",
+            "ammoMultiplier": 4,
+            "width": 16, 
+            "height": 16,
+            "speed": 8,  
+            "lifetime": 50,
+            "damage": 1,
+            "accel": -0.1,
+            "pierceBuilding": true,
+            "collidesAir": false,
+            "collideTerrain": true,
+            "fragBullets": 1,
+            "fragOnHit": true,
+            "fragOnAbsorb": true,
+            "fragBullet":{
+                "type": "EmptyBulletType",
+                "instantDisappear": true,
+                "damage": 0,
+                "speed": 0,
+                "despawnUnit": "埋伏-地雷" 
+            }
+        },
+        "固态石油":{
+            "type": "ArtilleryBulletType",
+            "backColor": "43434F",
+            "hitColor": "43434F",
+            "trailColor": "43434F",
+            "ammoMultiplier": 4,
+            "width": 16, 
+            "height": 16,
+            "speed": 8,  
+            "lifetime": 50,
+            "damage": 1,     
+            "accel": -0.1,
+            "pierceBuilding": true,
+            "collidesAir": false,
+            "collideTerrain": true,
+            "fragBullets": 1,
+            "fragOnHit": true,
+            "fragOnAbsorb": true,
+            "fragBullet":{
+                "type": "EmptyBulletType",
+                "instantDisappear": true,
+                "damage": 0,
+                "speed": 0,
+                "despawnUnit": "埋伏-地雷2" 
+            }
+        },
+        "神秘物质":{
+            "type": "ArtilleryBulletType",
+            "backColor": "FFFFFF",
+            "hitColor": "FFFFFF",
+            "trailColor": "FFFFFF",
+            "rangeChange": 400,
+            "reloadMultiplier": 0.5,
+            "ammoMultiplier": 1,
+            "width": 32, 
+            "height": 32,
+            "speed": 10,  
+            "lifetime": 80,
+            "damage": 1,    
+            "accel": -0.1,
+            "pierceBuilding": true,
+            "collidesAir": false,
+            "collideTerrain": true,
+            "fragBullets": 1,
+            "fragOnHit": true,
+            "fragOnAbsorb": true,
+            "fragBullet":{
+                "type": "EmptyBulletType",
+                "instantDisappear": true,
+                "damage": 0,
+                "speed": 0,
+                "despawnUnit": "埋伏-地雷3" 
+            }
+        }
+    }, 
+    "requirements": [
+        "thorium/75",
+        "silicon/90",
+        "blast-compound/25"
+    ],
+    "category": "turret",
+    "research": {
+        "parent": "破防",
+        "objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "蛇行道"
+			}
+		]
+    }
+}

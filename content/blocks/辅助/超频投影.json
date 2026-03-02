@@ -1,0 +1,19 @@
+{
+    "name": "超频投影",
+    "size": 2,
+    "health": 260,
+    "range": 120, //15 * 8
+    "useTime": 600, //状态持续ticks
+    "reload": 240, //施加状态的间隔ticks
+    "consumes": {
+        "power": 2
+    },
+    "requirements": [
+        "lead/100",
+        "graphite/75",
+        "silicon/40",
+        "thorium/25"
+    ],
+    "category": "effect",
+    "research": "超导节点"
+}

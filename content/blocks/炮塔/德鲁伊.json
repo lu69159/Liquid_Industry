@@ -1,0 +1,76 @@
+{
+    "name": "德鲁伊",
+    "health": 1000,
+    "size": 3,
+    "range": 280,
+    "reload": 5.4,
+    "recoilTime": 5.4, //后坐力时间
+    "recoil": 1,
+    "canOverdrive": false,
+    "consumes": {
+        "power": 6.6
+    },
+    "predictTarget": true,
+    "unitSort":"weakest",
+    "shootY": 12,
+    "shoot":{
+        "shots": 1,
+        "shotDelay": 0,
+        "type": "ShootPattern"
+    },
+    "shootSound": "laser",
+    "shootCone": 1,
+    "targetHealing": true,
+    "targetGround": true,
+	"targetAir": false,
+    "inaccuracy": 0,
+	"shake": 0,
+    "rotateSpeed": 6,
+    "shootType": {
+        "type": "BasicBulletType",
+        "buildingDamageMultiplier": 0.25,
+        "collidesTeam": true,
+        "collidesAir": false,
+		"damage": 10,
+        "pierceArmor": true,
+        "healPercent": 3,
+		"trailLength": 3,
+		"trailWidth": 1.6,
+		"trailColor": "6BC583",
+		"frontColor": "84F491",
+		"backColor": "6BC583",
+		"width": 8,
+		"height": 26,
+        "speed": 15,
+		"lifetime": 18.67,
+        "hitEffect": {
+			"type": "WaveEffect",
+			"lifetime": 16,
+			"sizeFrom": 1,
+			"sizeTo": 16,
+			"strokeFrom": 2,
+			"strokeTo": 0,
+			"colorFrom": "84F491FF",
+			"colorTo": "84F49139"
+		},
+        "despawnEffect": {
+			"type": "WaveEffect",
+			"lifetime": 16,
+			"sizeFrom": 1,
+			"sizeTo": 16,
+			"strokeFrom": 2,
+			"strokeTo": 0,
+			"colorFrom": "84F491FF",
+			"colorTo": "84F49139"
+		}
+    },
+     "requirements": [
+		"copper/200",
+        "lead/200",
+        "graphite/50",
+        "治愈质/10"
+	],
+    
+	"category": "turret",
+    "research": "mend-projector"
+}

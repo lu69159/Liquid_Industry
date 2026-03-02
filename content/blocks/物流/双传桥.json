@@ -1,0 +1,30 @@
+{
+    "name": "双传桥",
+    "health": 90,
+    "range": 36,
+    "arrowPeriod": 1.35,
+    "arrowTimeScl": 1.83,
+    "transportTime": 0.2,
+    "hasItems": true,
+    "itemCapacity": 20,
+    "hasLiquids": true,
+    "liquidCapacity": 20,
+    "hasPower": true,
+    "outputsLiquid": true,
+    "pulse": true,
+    "canOverdrive": false,
+    "consumes": {
+        "power": 0.5
+        
+    },
+    "requirements": [
+        "surge-alloy/8",
+        "phase-fabric/12",
+        "亲水质/1",
+        "titanium/5",
+        "metaglass/5"
+        
+
+    ],
+    "category": "distribution"
+}

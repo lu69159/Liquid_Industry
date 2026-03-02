@@ -1,0 +1,16 @@
+{
+	"name": "大型相织装甲储液罐",
+	"health": 3360,
+	"size": 2,
+	"armor": 5,
+    "hasLiquids": true,
+    "liquidCapacity": 2000,
+	"requirements": [
+        "metaglass/32",
+		"phase-fabric/24",
+		"亲水质/4"         
+	],
+	"chanceDeflect": 20,
+	"category": "defense",
+	"research": "相织装甲储液罐"
+}

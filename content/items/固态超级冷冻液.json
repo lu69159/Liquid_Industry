@@ -1,0 +1,12 @@
+{
+"name":"固态超级冷冻液",
+"description":"极度致密的固体状超级冷冻液",
+"color":"C0ECFFFF",
+"explosiveness":0,
+"flammability":0,
+"radioactivity":0,
+"hardness":0,
+"cost":1.5,
+"alwaysUnlocked":false,
+"research":"亲水质"
+}

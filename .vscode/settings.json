@@ -1,0 +1,6 @@
+{
+    "trae.enableCodelens": {
+        "enableInlineDocumentation": false,
+        "enableInlineExplain": false
+    }
+}

@@ -1,0 +1,102 @@
+{
+	"name": "精华提取工厂",
+    "description": "输入高温矿渣液热解二级精炼废液以获取废液精华。\n建议配合液体卸载器以分离输出",
+    "size": 5,
+	"health": 960,
+    "hasItems": false,
+	"hasLiquids": true,
+    "hasPower": true,
+    "outputsLiquid": true,
+    "dumpExtraLiquid": true,
+    "itemCapacity": 15,
+    "liquidCapacity": 280,
+    "category": "crafting",
+    "research": {
+		"parent": "再精炼高炉",
+		"objectives": [
+			{
+				"type": "SectorComplete",
+				"preset": "永夜荒地"
+			}
+		]
+	},
+    "craftTime": 180,
+    "consumes": {
+		"power": 8,
+		"liquids": [
+            "二级精炼废液/0.4",
+            "slag/1"
+        ]
+	},
+    "requirements": [
+        "titanium/280",
+        "metaglass/75",
+        "graphite/180",
+        "silicon/120",
+        "plastanium/90",
+        "surge-alloy/95",
+        "亲水质/15"
+	],
+    "outputLiquids": [
+        "water/0.6",
+        "三级精华废液/0.3"
+    ],
+    "lightLiquid": "三级精华废液",
+
+    "craftEffect": {
+		"type": "ParticleEffect",
+		"particles": 8,
+		"interp": "pow5Out",
+		"sizeInterp": "pow3In",
+		"sizeFrom": 3,
+		"sizeTo": 0,
+		"length": 20,
+		"baseLength": 0,
+		"lifetime": 180,
+		"colorFrom": "FFCD668F",
+		"colorTo": "E286548F"
+	},
+    "drawer": {
+        "type": "DrawMulti",
+        "drawers": [
+            {
+                "type": "DrawRegion",
+                "suffix": "-bottom"
+            }, 
+            {
+                "type": "DrawLiquidTile",
+                "drawLiquid": "二级精炼废液"
+            },
+            {
+                "type": "DrawLiquidTile",
+                "drawLiquid": "slag"
+            },      
+            {
+                "type": "DrawPistons",
+                "sinMag": 3,
+                "sinScl": 5,
+                "sideOffset": 180
+            },
+            {
+                "type": "DrawRegion",
+                "suffix": "-mid"
+            }, 
+            "DrawCrucibleFlame",
+            {
+                "type": "DrawLiquidTile",
+                "drawLiquid": "water"
+            },
+            {
+                "type": "DrawLiquidTile",
+                "drawLiquid": "三级精华废液"
+            },
+            {
+                "type": "DrawGlowRegion",
+                "alpha": 0.5,
+                "glowScale": 5,
+                "color": "FFCD66"
+            },
+            "DrawDefault"
+        ]
+    }
+}

@@ -1,0 +1,12 @@
+{
+"name":"亲水质",
+"description":"可以轻易地与液体分子相互结合形成固体。用于液体的大量存储和运输。",
+"color":"4DA6FFFF",
+"explosiveness":0,
+"flammability":0,
+"radioactivity":0,
+"hardness":1,
+"cost":1.4,
+"alwaysUnlocked":false,
+"research":"graphite"
+}

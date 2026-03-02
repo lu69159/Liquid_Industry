@@ -1,0 +1,32 @@
+{
+    "name": "麻痹穹顶",
+    "hasLiquids": true,
+    "size": 3,
+    "health": 780,
+    "range": 320,
+    "useTime": 600,
+    "reload": 300,
+    "consumes": {
+        "power": 12,
+        "liquids":[
+            "重水/0.25"
+        ]
+    },
+    "requirements": [
+        "lead/220",
+        "plastanium/125",
+        "silicon/120",
+        "phase-fabric/55",
+        "surge-alloy/105"
+    ],
+    "category": "effect",
+    "research": {
+		"parent": "麻痹投影",
+		"objectives": [
+			{
+				"type": "SectorComplete",
+				"preset": "永夜荒地"
+			}
+		]
+	}
+}

@@ -1,0 +1,37 @@
+//OverdriveProjector
+//30 - 40 格
+{
+    "name": "超速天穹",
+    "size": 4,
+    "health": 865,
+    "range": 240,
+    "hasBoost": true,
+    "speedBoost": 2.5,
+    "speedBoostPhase": 0.5,
+    "phaseRangeBoost": 80,
+    "useTime": 300,
+    "consumes": {
+		"power": 14,
+        "liquids":[
+            "cryofluid/0.2"
+        ],
+		"items": {
+			"items": [
+				"phase-fabric/1"
+			],
+			"booster": true,
+			"optional": true
+		}
+	},
+    "requirements": [
+        "lead/350",
+        "graphite/50",
+        "titanium/180",
+        "silicon/180",
+        "plastanium/130",
+        "surge-alloy/150",
+        "phase-fabric/40"
+    ],
+    "category": "effect",
+	"research": "overdrive-dome"
+}

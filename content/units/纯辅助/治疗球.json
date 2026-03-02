@@ -1,0 +1,35 @@
+{
+    "name": "治疗球",
+    "description": "战地医生，迅速修复受损单位。",
+    "research": "辅助工厂",
+    "health": 1000,
+    "armor": 0,
+    "hitSize": 4,
+    "speed": 2.7,
+    "accel": 0.08,
+    "drag": 0.04,
+    "itemCapacity": 0,
+    "fogRadius": 0,
+    "flying": true,
+    "faceTarget": true,
+    "isEnemy": false,
+    "controller": "DefenderAI",
+    "trailLength": 10,
+	"trailWidth": 2,
+    "trailColor": "84F491",
+    "outlineColor": "00000000",
+
+    "weapons": [
+        {
+            "type": "RepairBeamWeapon",
+            "x": 0,
+            "y": 0,
+            "shootY": 0,
+            "mirror": false,
+            "targetBuildings": false,
+            "targetUnits": true,
+            "repairSpeed": 1.8,
+            "healColor": "84F491",
+        }
+    ] 
+}

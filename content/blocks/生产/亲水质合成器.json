@@ -1,0 +1,51 @@
+{
+	"name": "亲水质合成器",
+    "health": 350,
+    "size": 3,
+    "hasPower": true,
+	"hasItems": true,
+    "itemCapacity": 15,
+	"hasLiquids": true,
+	"liquidCapacity": 60,
+    "requirements": [
+        "lead/80",
+        "titanium/20",
+		"graphite/125",
+        "metaglass/50"
+	],
+    "consumes": {
+		"power": 2,
+		"items": [
+            "graphite/4"
+		],
+		"liquids": [
+			"water/0.2"
+		]
+	},
+    "outputItems": [
+        "亲水质/1"
+    ],
+    "craftTime": 240,
+    "category": "crafting",
+    "research": "multi-press",
+
+    "craftEffect": "steam",
+    "drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+            {
+                "type": "DrawRegion",
+                "suffix": "-bottom"
+            },
+            "DrawFlame",
+            {
+				"type": "DrawLiquidTile",
+                "drawLiquid": "water"
+			},
+			{
+				"type": "DrawDefault"
+			}
+			
+		]
+	}
+}

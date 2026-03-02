@@ -1,0 +1,20 @@
+{
+    "name": "精华提取源",
+    "description": "将含有少量杂质的神能精华转变为除神秘物质外的任意固体物质。",
+    "health": 3260,
+    "size": 3,
+    "hasPower": false,
+    "hasLiquids": true,
+    "canOverdrive": false,
+	"liquidCapacity": 1,
+    "consumes": {
+        "liquids":[
+            "超浓缩精华液/0.1"
+        ]
+    },
+    "itemsPerSecond": 15,
+    "requirements": [
+        "神秘物质/99"
+    ],
+    "category": "crafting"
+}

@@ -1,0 +1,6 @@
+{
+	"type": "StaticWall",
+	"name": "极冰墙",
+    "albedo": 0.65,
+	"variants": 2
+}

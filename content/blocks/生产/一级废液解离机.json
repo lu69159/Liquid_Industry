@@ -1,0 +1,51 @@
+{
+    "name": "一级废液解离机",
+    "size": 3,
+    "health": 480,
+    "hasPower": true,
+	"hasLiquids": true,
+    "itemCapacity": 20,
+	"liquidCapacity": 10,
+    "category": "crafting",
+	"research": "废液离心机",
+    "craftTime": 18,
+    "consumes": {
+		"power": 3,
+		"liquid": {
+			"liquid": "一级精炼废液",
+			"amount": 0.3
+		}
+	},
+    "requirements": [
+        "titanium/125",
+        "metaglass/35",
+        "silicon/25",
+        "plastanium/5"
+    ],
+    "results": [
+        {"item": "titanium","amount": 4},
+        {"item": "graphite","amount": 2},
+        {"item": "thorium","amount": 1}
+        
+    ],
+
+    "drawer": {
+        "type": "DrawMulti",
+        "drawers": [
+            {
+                "type": "DrawRegion",
+                "suffix": "-bottom"
+            },
+            {
+                "type": "DrawLiquidTile",
+                "drawLiquid": "一级精炼废液"
+            },
+            {
+                "type": "DrawBlurSpin",
+                "suffix": "-suffix",
+                "rotateSpeed": 5
+            },
+            "DrawDefault"
+        ]
+    }
+}

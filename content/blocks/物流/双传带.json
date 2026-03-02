@@ -1,0 +1,17 @@
+{
+    "name": "双传带",
+    "health": 155,
+    //"pushUnits": false,
+    //"isDuct": true,
+    "hasLiquids": true,
+    "liquidCapacity": 20,
+    "liquidPressure": 1.025,
+    "requirements": [
+        "metaglass/1",
+        "plastanium/1",
+        "surge-alloy/1",
+        "phase-fabric/1"
+	],
+    "category": "distribution",
+    "speed": 2
+}

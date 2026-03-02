@@ -1,0 +1,17 @@
+{
+	"name": "衰变熔岩",
+	"description": "提取神秘物质的危险副产物，极易自燃自爆。\n建议焚化炉处理。",
+	"alwaysUnlocked":false,
+	"incinerable": false,
+    "effect": "burning",
+	"lightColor":"FF2020FF",
+	"color": "FF0000FF",
+	"flammability": 6,
+    "explosiveness": 6,
+	"temperature": 3,
+	"heatCapacity": 0.01,
+	"viscosity": 0.85,
+	"boilPoint": 6,
+	"research": "四级浓缩精华液",
+	"coolant": false
+}

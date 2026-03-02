@@ -1,0 +1,32 @@
+{
+    "name": "缓速穹顶",
+    "hasLiquids": true,
+    "size": 3,
+    "health": 780,
+    "range": 320,
+    "useTime": 600,
+    "reload": 300,
+    "consumes": {
+        "power": 12,
+        "liquids":[
+            "冰冷废液/0.5"
+        ]
+    },
+    "requirements": [
+        "lead/220",
+        "scrap/365",
+        "silicon/120",
+        "phase-fabric/55",
+        "surge-alloy/105"
+    ],
+    "category": "effect",
+    "research": {
+		"parent": "缓速投影",
+		"objectives": [
+			{
+				"type": "SectorComplete",
+				"preset": "永夜荒地"
+			}
+		]
+	}
+}

@@ -1,0 +1,37 @@
+{
+    "name": "硬质石油钻井",
+    "health": 760,
+    "size": 4,
+    "hasPower": true,
+	"hasLiquids": true,
+	"liquidCapacity": 45,
+    "baseEfficiency": 1,
+    "pumpAmount": 0.75,
+    "attribute": "oil",
+    "result": "oil",
+    "category": "production",
+	"research": "oil-extractor",
+    "itemUseTime": 60,
+
+    "requirements": [
+        "copper/400",
+        "titanium/220",
+        "thorium/175",
+        "graphite/300",
+        "plastanium/25",
+        "silicon/75"
+    ],
+
+    "consumes":{
+        "power": 13.5,
+        "items":[
+            "sand/2"
+        ],
+        "liquids":[
+            "water/0.5"
+        ]
+    },
+
+    "updateEffect": "pulverize",
+    "updateEffectChance": 0.1
+}

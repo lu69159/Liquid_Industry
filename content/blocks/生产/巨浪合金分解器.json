@@ -1,0 +1,27 @@
+{
+	"name": "巨浪合金分解器",
+    "health": 200,
+    "size": 2,
+    "hasPower": true,
+    "itemCapacity": 20,
+    "requirements": [
+        "lead/160",
+        "silicon/120",
+        "surge-alloy/10"
+	],
+    "consumes": {
+		"power": 1,
+		"items": [
+            "surge-alloy/1"
+		]
+	},
+    "outputItems": [
+        "copper/3",
+        "lead/4",
+        "titanium/2",
+        "silicon/3"
+    ],
+    "craftTime": 60,
+    "category": "crafting",
+    "research": "相织布分解器"
+}

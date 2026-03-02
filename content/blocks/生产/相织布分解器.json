@@ -1,0 +1,25 @@
+{
+	"name": "相织布分解器",
+    "health": 200,
+    "size": 2,
+    "hasPower": true,
+    "itemCapacity": 20,
+    "requirements": [
+        "lead/160",
+        "silicon/120",
+        "phase-fabric/10"
+	],
+    "consumes": {
+		"power": 1,
+		"items": [
+            "phase-fabric/1"
+		]
+	},
+    "outputItems": [
+        "thorium/4",
+        "sand/10"
+    ],
+    "craftTime": 60,
+    "category": "crafting",
+    "research": "塑钢分解器"
+}

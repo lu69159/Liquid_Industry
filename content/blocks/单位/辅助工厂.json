@@ -1,0 +1,50 @@
+{
+	"name": "辅助工厂",
+    "health":720,
+	"size":3,
+	"consumes":{
+        "power": 3
+    },
+	"plans":[
+        { 
+		"unit": "治疗球",
+		"time":1800, 
+		"requirements": [
+            "silicon/15",
+            "治愈质/1"
+        ]
+	    },
+        { 
+		"unit": "修复球",
+		"time":1800, 
+		"requirements": [
+            "silicon/10",
+            "phase-fabric/5"
+        ]
+	    },
+        { 
+		"unit": "建造球",
+		"time":1800, 
+		"requirements": [
+            "silicon/40"
+        ]
+	    },
+        { 
+		"unit": "状态球",
+		"time":1800, 
+		"requirements": [
+            "silicon/5",
+            "亲水质/3",
+            "治愈质/2"
+        ]
+	    }
+    ],
+	"requirements": [
+        "copper/60",
+        "lead/80",
+        "plastanium/15"
+    ],
+	"category":"units",
+    "buildVisibility": "shown",
+    "research": "air-factory"
+}

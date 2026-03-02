@@ -1,0 +1,13 @@
+{
+    "type": "Floor",
+    "name": "冰冷废液",
+    "speedMultiplier":0.5, //移动速率
+    "variants":0,
+    "albedo": 0.5, //反照率
+    "drownTime": 200,
+    "cacheLayer":"water",
+    "isLiquid": true,
+    "liquidDrop": "冰冷废液",
+    "liquidMultiplier": 1.0,
+    "supportsOverlay":true
+}

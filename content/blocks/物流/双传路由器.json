@@ -1,0 +1,14 @@
+{
+    "name": "双传路由器",
+    "health": 90,
+    "speed": 3,
+    "floating": true,
+    "hasLiquids": true,
+    "liquidCapacity": 30,
+    "requirements": [
+        "metaglass/3",
+        "plastanium/1",
+        "surge-alloy/1"
+    ],
+    "category": "distribution"
+}

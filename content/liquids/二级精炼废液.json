@@ -1,0 +1,14 @@
+{
+	"name": "二级精炼废液",
+	"description": "冰冷废液二次提炼的液态产物，可从中少量提取各种合成物质。",
+	"alwaysUnlocked":false,
+	"lightColor":"EDEDED0A",
+	"color": "9A9DBFFF",
+	"flammability": 0,
+	"temperature": 0.25,
+	"heatCapacity": 0.3,
+	"viscosity": 0.7,
+	"boilPoint": 2,
+	"research": "一级精炼废液",
+	"coolant": false
+}

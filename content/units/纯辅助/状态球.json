@@ -1,0 +1,38 @@
+{
+    "name": "状态球",
+    "description": "为周围中距离己方单位提供强化BUFF。",
+    "research": "辅助工厂",
+    "health": 1000,
+    "armor": 0,
+    "hitSize": 4,
+    "speed": 2.7,
+    "accel": 0.08,
+    "drag": 0.04,
+    "itemCapacity": 0,
+    "fogRadius": 0,
+    "flying": true,
+    "faceTarget": true,
+    "isEnemy": false,
+    "controller": "DefenderAI",
+    "trailLength": 10,
+    "trailWidth": 2,
+    "trailColor": "F23A3A",
+    "outlineColor": "00000000",
+
+     "abilities": [
+        {
+            "type": "StatusFieldAbility",
+            "effect": "shielded",
+            "duration": 600,
+            "range": 144,
+            "reload": 600
+        },
+        {
+            "type": "StatusFieldAbility",
+            "effect": "overclock",
+            "duration": 600,
+            "range": 144,
+            "reload": 600
+        }
+	]
+}

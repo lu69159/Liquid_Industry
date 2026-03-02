@@ -1,0 +1,24 @@
+{
+    "type": "Floor",
+    "name": "衰变熔岩",
+    "speedMultiplier": 0.19,
+    "emitLight": true,
+    "lightRadius": 80,
+    "lightColor":"FF2020FF",
+    "variants":0,
+    "drownTime": 230,
+    "cacheLayer":"slag",
+    "isLiquid": true,
+    "shallow": true,
+    "damageTaken": 2,
+    "liquidDrop": "衰变熔岩",
+    "liquidMultiplier": 1.0,
+    "attributes": {
+        "heat": 1.5
+    },
+
+    "status": "burning",
+    "statusDuration": 240,
+            
+    "supportsOverlay":true
+}

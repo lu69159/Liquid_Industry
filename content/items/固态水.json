@@ -1,0 +1,12 @@
+{
+"name":"固态水",
+"description":"极度致密的固体状水",
+"color":"4DA6FFFF",
+"explosiveness":0,
+"flammability":0,
+"radioactivity":0,
+"hardness":0,
+"cost":1.5,
+"alwaysUnlocked":false,
+"research":"亲水质"
+}

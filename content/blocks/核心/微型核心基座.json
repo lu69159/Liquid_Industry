@@ -1,0 +1,25 @@
+{
+    "name":"微型核心基座",
+	"size": 1,
+    "health": 140,
+    "requirements": [
+        "copper/125",
+        "lead/100"
+	],
+	"unitType": "基石",
+	"alwaysUnlocked":false,
+	"rebuildable": false,
+	"itemCapacity": 0,
+	"unitCapModifier": 0,
+	"category": "effect",
+    "research": {
+		"root":true,
+		"name": "Nepture",
+        "objectives": [
+			{
+				"type": "SectorComplete",
+				"preset": "planetaryTerminal"
+			}
+		]
+	}
+}

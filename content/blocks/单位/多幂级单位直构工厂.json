@@ -1,0 +1,38 @@
+{
+    "name": "多幂级单位直构工厂",
+    "health":3035,
+	"size":7,
+    "liquidCapacity": 60,
+    "category": "units",
+    "research": "倍乘级单位直构工厂",
+    "requirements": [
+        "lead/1800",
+        "titanium/1800",
+        "thorium/350",
+        "silicon/800",
+        "plastanium/450",
+        "phase-fabric/300",
+        "治愈质/375"
+    ],
+     "consumes":{
+        "power": 13,
+        "items":[
+            "silicon/850",
+            "治愈质/350"
+        ],
+        "liquids":[
+            "cryofluid/1"
+        ]
+    },
+    "upgrades":[
+        ["dagger","scepter"],
+        ["nova","vela"],
+        ["crawler","arkyid"],
+        ["flare","antumbra"],
+        ["mono","quad"],
+        ["risso","sei"],
+        ["retusa","aegires"],
+        ["水黾","电鳐"]
+    ],
+    "constructTime": 5400
+}

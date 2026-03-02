@@ -1,0 +1,61 @@
+{
+	"name": "超冷混合器",
+    "size": 3,
+	"health": 480,
+    "hasItems": false,
+	"hasLiquids": true,
+    "hasPower": true,
+    "outputsLiquid": true,
+    "liquidCapacity": 60,
+    "craftTime": 120,
+    "updateEffect": "freezing",
+	"consumes": {
+		"power": 2,
+		"liquids": [
+			"cryofluid/0.9",
+            "三级精华废液/0.1"
+		]
+	},
+    "outputLiquid": {
+		"liquid": "超级冷冻液",
+		"amount": 1
+	},
+    "requirements": [
+        "lead/160",
+        "titanium/80",
+		"metaglass/40",
+		"silicon/40"
+	],
+    "category": "crafting",
+	"research": {
+        "parent": "硅炉",
+        "objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "蛇行道"
+			}
+		]
+    },
+    "drawer": {
+        "type": "DrawMulti",
+        "drawers": [
+            {
+                "type": "DrawRegion",
+                "suffix": "-bottom"
+            },
+            {
+                "type": "DrawBubbles"
+            },
+            {
+                "type": "DrawLiquidTile",
+                "drawLiquid": "cryofluid"
+            },
+            "DrawDefault",
+            {
+                "type": "DrawLiquidRegion",
+                "drawLiquid": "超级冷冻液",
+                "suffix": "-liquid"
+            }
+        ]
+    }
+}

@@ -1,0 +1,143 @@
+{
+    "name": "巨蟹",
+    "hovering": true,  
+    "canDrown": false,
+    "research": {
+        "parent": "电鳐",
+        "objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "蛇行道"  //地图完成后再加入科技树
+			}
+		]
+    },
+    "squareShape": true,
+	"omniMovement": true,
+	"rotateMoveFirst": true,
+    "rotateSpeed": 1.8,
+    "speed": 0.5,
+    "hitSize": 42,
+    "ammoCapacity": 100,
+	"health": 30000,
+	"armor": 32,
+    "drag": 0.04,
+	"accel": 0.06,
+    "itemCapacity": 100,
+	"faceTarget": true,
+    "targetAir": true,
+    "targetGround": true,
+    "targetFlags": [
+		"turret",
+		"core"
+	],
+    "immunities": [
+        "burning",
+        "freezing"
+    ],
+    "requirements": {
+		"block": "tetrative-reconstructor",
+		"previous": "电鳐"
+	},
+    "abilities": [
+        {
+            "type": "ShieldArcAbility",
+            "region": "液体工艺-巨蟹-shield",
+            "radius": 60,
+            "angle": 180,
+            "regen": 2,  // 120/s
+            "cooldown": 600,  // 60*10
+            "max": 5000,
+            "y": -22,
+            "width": 12,
+            "whenShooting": false,
+            "pushUnits": true,
+            "chanceDeflect": 0.5         
+        },
+        {
+            "type": "SuppressionFieldAbility",
+            "range": 240,
+            "reload": 180,
+            "color": "8AA3F4FF",
+            "particleColor": "8AA3F4FF",
+            "effectColor": "8AA3F4FF"
+        }
+    ],
+    "weapons":[
+        {
+            "name": "巨蟹1",
+            "x":0,
+            "y":0,
+            "shootY": 36,
+            "recoil": 0,
+            "mirror": false,
+            "rotate": false,
+            "alwaysContinuous": true,
+            "shootSound": "beamMeltdown",
+
+            "bullet": {
+                "type": "ContinuousLaserBulletType",
+                "makeFire": false,
+                "damage": 80,
+                "colors": ["FFFFFFFF", "FFFFFF70"],
+                "maxRange": 256,
+                "length": 240,
+                "hitEffect": "hitMeltdown",
+                "lifetime": 60,
+                "shake": 2,
+                "shootEffect": "shootHeal",
+                "width": 5,
+                "largeHit": false,
+
+                "status": "shocked",
+
+                "intervalBullet": {
+                    "type": "LightningBulletType",
+                    "damage": 15,
+                    "pierceArmor": true,
+                    "lightningColor": "FFFFFF",
+                    "lightningLength": 25,
+                    "lightningLengthRand": 10,
+                    "shootSound": "shootArc"
+                },       
+                "bulletInterval": 12,
+                "intervalBullets": 1,
+                "intervalRandomSpread": 10,
+                "intervalSpread": 15,
+                "intervalAngle": 0
+                }
+        },
+        {
+            "name": "巨蟹2",
+
+            "shoot":{
+                "type": "ShootPattern",
+                "shots": 2,
+                "shotDelay": 10
+            },
+
+            "x": 20.5,
+            "y": -2,
+            "shootY": 10,
+            "recoil": 2,
+            "mirror": true,
+            "alternate": true,
+            "rotate": true,
+            "rotateSpeed": 2.5,
+            "reload": 60,
+            "inaccuracy": 0,
+            "ejectEffect": "sparkShoot",
+            "bullet":{
+                "type": "LaserBulletType",
+                "damage": 160,
+                "length": 320,
+                "width": 16,
+                "pierceCap": 6,
+                "hitSize": 4,
+                "collidesAir": true,
+                "hitColor": "FFFFFF",
+                "colors": ["EFEFEF", "DFDFDF", "FFFFFF"],
+                "hitEffect": "hitLaserColor"
+            }
+        }
+    ]
+}

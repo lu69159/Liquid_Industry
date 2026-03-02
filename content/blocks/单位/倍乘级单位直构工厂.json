@@ -1,0 +1,41 @@
+//Reconstructor
+{
+    "name": "倍乘级单位直构工厂",
+    "health":1200,
+	"size":5,
+    "category": "units",
+    "research":{
+        "parent": "微型核心基座",
+        "objectives": [
+            {
+				"type": "SectorComplete",
+				"preset": "地火"
+			}
+        ]
+    },
+    "requirements": [
+        "lead/600",
+        "titanium/300",
+        "thorium/200",
+        "silicon/400",
+        "治愈质/75"
+    ],
+    "consumes":{
+        "power": 6,
+        "items":[
+            "silicon/130",
+            "治愈质/30"
+        ]
+    },
+    "upgrades":[
+        ["dagger","fortress"],
+        ["nova","quasar"],
+        ["crawler","spiroct"],
+        ["flare","zenith"],
+        ["mono","mega"],
+        ["risso","bryde"],
+        ["retusa","cyerce"],
+        ["水黾","河狸"]
+    ],
+    "constructTime": 1800
+}

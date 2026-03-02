@@ -1,0 +1,15 @@
+{
+	"name":"相织布卸载器",
+	"health": 100,
+	"size":1,
+	"speed": 1.5,
+	"update": "true",
+	"hasItems": "true",
+	"requirements": [
+		"titanium/30",
+		"silicon/40",
+		"phase-fabric/10"
+	],
+	"category": "distribution",
+	"research":"unloader"
+	}

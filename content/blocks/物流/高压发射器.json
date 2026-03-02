@@ -1,0 +1,22 @@
+{
+	"name": "高压发射器",
+	"health": 50,
+	"size": 3,
+	"hasPower": false,
+    "itemCapacity": 80,
+	"liquidCapacity": 60,
+	"reload": 210,
+	"range": 400,
+	"consumes": {
+        "liquids": [
+			"water/0.4"
+		]
+    },
+	"requirements": [
+        "copper/120",
+		"metaglass/50",
+        "silicon/20"
+    ],
+	"category": "distribution",	
+	"research": "bridge-conveyor"
+}

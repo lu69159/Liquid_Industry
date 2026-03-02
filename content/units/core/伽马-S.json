@@ -1,0 +1,71 @@
+{
+    "name": "伽马-S",
+    "description": "伽马改装版，保护闪电核心，可建造建筑。",
+    "flying": true,
+    "lowAltitude": true,  
+    "mineSpeed": 8.5,
+    "mineTier": 2,
+    "buildSpeed": 1.05,
+    "drag": 0.05,
+    "speed": 3.6,
+    "rotateSpeed": 20,
+    "accel": 0.11,
+    "fogRadius": 0,
+    "itemCapacity": 75,
+    "health": 280,
+    "engineOffset": 6,
+    "hitSize": 11,
+    "immunities": [
+        "freezing"
+    ],
+    "abilities": [
+        {
+            "type": "EnergyFieldAbility",
+            "effectRadius": 1,
+            "color": "00FFFFEF",
+            "range": 120,
+            "reload": 90,
+            "hitUnits": true,
+            "hitBuildings": true,
+            "targetAir": true,
+            "targetGround": true,
+            "shootSound": "shootArc",    
+            "maxTargets": 3,
+            "damage": 20,
+            "healPercent": 0.5,
+            "sameTypeHealMult": 0.1,
+            "status": "shocked"
+        }
+	],
+    "weapons":[
+        {
+            "name": "伽马-S1",
+            "reload": 15,
+            "top": false,
+            "x": 1,
+            "y": 2,
+            "shoot": {
+                "type": "ShootSpread",
+                "shots": 2,
+                "shotDelay": 3,
+                "spread": 2
+            },
+            "inaccuracy": 3,
+            "ejectEffect": "casing1",
+            "bullet":{
+                "type": "BasicBulletType",
+                "speed": 3.5,
+                "damage": 11,
+                "width": 6.5,
+                "height": 11,
+                "lifetime": 70,
+                "shootEffect": "shootSmall",
+                "smokeEffect": "shootSmallSmoke",
+                "buildingDamageMultiplier": 0.01,
+                "homingPower": 0.04,
+                "status": "shocked",
+                "statusDuration": 120
+            }
+        }
+    ]
+}

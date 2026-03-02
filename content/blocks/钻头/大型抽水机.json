@@ -1,0 +1,24 @@
+{
+	"name": "大型抽水机",
+	"health": 450,
+	"size": 3,
+	"hasPower": true,
+	"hasLiquids": true,
+	"liquidCapacity": 30,
+	"requirements": [
+		"titanium/100",
+		"graphite/75",
+		"metaglass/45",
+        "亲水质/7"
+	],
+	"consumes": {
+		"power": 7
+	},
+	"pumpAmount": 1.5,
+	//"rotateSpeed": 4,
+	"result": "water",
+	"baseEfficiency": 1,
+	"attribute": "water",
+	"category": "production",
+	"research": "强效抽水机"
+}
