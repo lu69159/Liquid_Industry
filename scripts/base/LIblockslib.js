@@ -45,7 +45,46 @@ exports.碳发电机 = TFDJ;
 
 const ZSHFYD = extend(NuclearReactor, "重水核反应堆", {});
 ZSHFYD.buildType = prov(() => {
+	var ZS = require("newliquids")["重水"];
 	return extend(NuclearReactor.NuclearReactorBuild, ZSHFYD, {
+		updateTile(){
+            var fuel = this.items.get(this.block.fuelItem), fullness = fuel * 1.0 / this.block.itemCapacity;		
+            this.productionEfficiency = fullness;
+
+            if(fuel > 0 && this.enabled){
+                this.heat += fullness * this.block.heating * Math.min(this.delta(), 4);
+
+                if(this.timer.get(this.block.timerFuel, this.block.itemDuration / this.timeScale)){
+                    this.consume();
+                }
+            }else{
+                this.productionEfficiency = 0;
+                this.heat = Math.max(0, this.heat - Time.delta / this.block.ambientCooldownTime);
+            }
+
+            if(this.heat > 0 && this.liquids.get(ZS) > 0.001){
+				var ZSefficiency = this.liquids.get(ZS) >= 10 ? 1 : this.liquids.get(ZS) / 10;
+                var maxUsed = Math.min(this.liquids.get(Liquids.cryofluid), this.heat / this.block.coolantPower / ZSefficiency);	
+                this.heat -= maxUsed * this.block.coolantPower;
+                this.liquids.remove(Liquids.cryofluid, maxUsed);
+            }
+
+            if(this.heat > this.block.smokeThreshold){
+                var smoke = 1.0 + (this.heat - this.block.smokeThreshold) / (1 - this.block.smokeThreshold); //ranges from 1.0 to 2.0
+                if(Mathf.chance(smoke / 20.0 * this.delta())){
+                    Fx.reactorsmoke.at(this.x + Mathf.range(this.block.size * Vars.tilesize / 2),
+                    this.y + Mathf.range(this.block.size * Vars.tilesize / 2));
+                }
+            }
+
+            this.heat = Mathf.clamp(this.heat);
+            this.heatProgress = this.block.heatOutput > 0 ? Mathf.approachDelta(this.heatProgress, this.heat * this.block.heatOutput * (this.enabled ? 1 : 0), this.block.heatWarmupRate * this.delta()) : 0;
+
+            if(this.heat >= 0.999){
+                Events.fire(Trigger.thoriumReactorOverheat);
+                this.kill();
+            }
+        },
 		draw(){
             this.super$draw();
 

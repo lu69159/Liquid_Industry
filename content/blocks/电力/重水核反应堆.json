@@ -63,13 +63,20 @@
 		]
 	},
     "fuelItem": "thorium",
-	"heating": 0.08,
-    "coolantPower": 2,
+	"heating": 0.01,
+    "coolantPower": 0.8,
 	"consumes": {
 		"items": ["thorium/1"],
         "liquids": [
-			"cryofluid/0.1",
-            "重水/0.03"
+			{
+				"liquid": "cryofluid",
+				"amount": 0.1,
+				"update": false
+			},
+			{
+				"liquid": "重水",
+				"amount": 0.03
+			}
 		]		
 	},
     "requirements": [
@@ -83,5 +90,6 @@
 	"category": "power",
 	"research": "thorium-reactor",
 
+	"heatOutput": 20,
 	"lightLiquid": "cryofluid"
 }

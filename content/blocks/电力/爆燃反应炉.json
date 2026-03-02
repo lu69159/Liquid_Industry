@@ -6,15 +6,6 @@
 	"itemCapacity": 20,
 	"hasItems": true,
 	"hasLiquids": true,
-	/*
-	"outputsLiquid": true,
-
-	"outputLiquid": {
-		"liquid": "slag",
-		"amount": 1
-	},
-	"explodeOnFull": true,
-	*/
 	"explosionPuddles": 256,
 	"explosionPuddleLiquid": "oil",
 	"explosionPuddleAmount": 650,
@@ -22,7 +13,7 @@
 	"explosionMinWarmup": 0.5,
 
 	"outputsPower": true,
-    "powerProduction": 330.5,
+    "powerProduction": 340.5,
 	"itemDuration": 60,
     "lightColor": "FFEEEE",
 	"ambientSound": "explosionAfflict", //我没试听过啊（）
@@ -76,13 +67,15 @@
 	},
 	"updateEffect": "explosion",
     "fuelItem": "固态石油",
-	"heating": 0.15,
-    "coolantPower": 2,
+	"heating": 0.04,
+    "coolantPower": 1,
 	"consumes": {
 		"items": ["固态石油/1"],
-        "liquids": [
-			"超级冷冻液/0.08"
-		]		
+		"liquid": {
+			"liquid": "超级冷冻液",
+			"amount": 0.04,
+			"update": false
+		}			
 	},
 	
     "requirements": [ 
