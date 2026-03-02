@@ -11,9 +11,11 @@ const SCLYQ = require("blocks/IL/双传路由器").ILrouter;
 const SCQ = require("blocks/IL/双传桥").ILbridge;
 const YTZQ = require("blocks/液体质驱").液体质驱;
 
+/*
 mindustry.ui.dialogs.ResearchDialog.rebuildItems = () => {
 
 };
+*/
 
 Events.on(ContentInitEvent, cons(e => {
     //超能墙
