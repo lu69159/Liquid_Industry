@@ -23,7 +23,6 @@
 	"explosionRadius": 64,
 	"explosionDamage": 28500,
     "explodeSound": "explosionReactorNeoplasm",
-	//largeExplosion
     "explodeEffect": { 
 		"type": "MultiEffect",
 		"effects": [
@@ -41,7 +40,6 @@
 				"type": "ParticleEffect",
 				"particles": 25,
 				"interp": "pow10Out",
-				//"sizeInterp": "pow3In",
 				"sizeFrom": 40,
 				"sizeTo": 0,
 				"length": 512,
@@ -54,7 +52,6 @@
 				"type": "ParticleEffect",
 				"particles": 75,
 				"interp": "pow5Out",
-				//"sizeInterp": "pow3In",
 				"sizeFrom": 40,
 				"sizeTo": 0,
 				"length": 512,
@@ -67,17 +64,8 @@
 	},
 	"updateEffect": "explosion",
     "fuelItem": "固态石油",
-	"heating": 0.04,
-    "coolantPower": 1,
-	"consumes": {
-		"items": ["固态石油/1"],
-		"liquid": {
-			"liquid": "超级冷冻液",
-			"amount": 0.04,
-			"update": false
-		}			
-	},
-	
+	"heating": 0.06,
+    "coolantPower": 1.5,
     "requirements": [ 
 		"lead/1200",
         "metaglass/880",

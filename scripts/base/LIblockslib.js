@@ -9,6 +9,8 @@ const JHXQ = extend(Floor, "禁核心区", {
 	}
 });
 
+//测试
+//const TEST = type.UnloaderProjector("TEST", 80);
 
 //单位
 const BCJDWZGGC = new Reconstructor("倍乘级单位直构工厂");
@@ -44,6 +46,11 @@ const TFDJ = new ConsumeGenerator("碳发电机");
 exports.碳发电机 = TFDJ;
 
 const ZSHFYD = extend(NuclearReactor, "重水核反应堆", {});
+ZSHFYD.consumeItems(ItemStack.with(
+    Items.thorium, 1,
+));
+ZSHFYD.consumeLiquid(require("newliquids")["重水"], 1.8/60);
+ZSHFYD.consumeLiquid(Liquids.cryofluid, 6/60).update = false;
 ZSHFYD.buildType = prov(() => {
 	var ZS = require("newliquids")["重水"];
 	return extend(NuclearReactor.NuclearReactorBuild, ZSHFYD, {
@@ -63,8 +70,8 @@ ZSHFYD.buildType = prov(() => {
             }
 
             if(this.heat > 0 && this.liquids.get(ZS) > 0.001){
-				var ZSefficiency = this.liquids.get(ZS) >= 10 ? 1 : this.liquids.get(ZS) / 10;
-                var maxUsed = Math.min(this.liquids.get(Liquids.cryofluid), this.heat / this.block.coolantPower / ZSefficiency);	
+				var ZSefficiency = this.liquids.get(ZS) >= 10 ? 1 : 10 / this.liquids.get(ZS);
+                var maxUsed = Math.min(this.liquids.get(Liquids.cryofluid), this.heat / this.block.coolantPower * ZSefficiency);	
                 this.heat -= maxUsed * this.block.coolantPower;
                 this.liquids.remove(Liquids.cryofluid, maxUsed);
             }

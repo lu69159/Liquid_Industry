@@ -141,7 +141,7 @@ LiquidMassDriver.buildType = (() => {
         liquidShooterValid(){
             if(this.waitingShooter == -1) return false;
             var other = Vars.world.build(this.waitingShooter);
-            return other != null && other.isValid() && other.efficiency > 0 && other.block == this.block && other.team == this.team && other.link == this.pos() && this.within(other, this.block.range);
+            return other != null && other.isValid() && other.block == this.block && other.team == this.team && other.link == this.pos() && this.within(other, this.block.range);
         },
         setShooter(shooter){
             if(shooter == null){

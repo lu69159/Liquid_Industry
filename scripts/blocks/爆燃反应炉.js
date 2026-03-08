@@ -16,6 +16,10 @@ const BRFYL = extend(NuclearReactor, "爆燃反应炉", {
         );
     }
 });
+BRFYL.consumeItems(ItemStack.with(
+    require("newitems")["固态石油"], 1
+));
+BRFYL.consumeLiquid(require("newliquids")["超级冷冻液"], 2.4/60).update = false;
 BRFYL.buildType = prov(() => {
     return extend(NuclearReactor.NuclearReactorBuild, BRFYL, {
         consume(){

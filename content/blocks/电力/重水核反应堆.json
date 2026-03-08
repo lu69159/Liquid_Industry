@@ -63,22 +63,8 @@
 		]
 	},
     "fuelItem": "thorium",
-	"heating": 0.01,
-    "coolantPower": 0.8,
-	"consumes": {
-		"items": ["thorium/1"],
-        "liquids": [
-			{
-				"liquid": "cryofluid",
-				"amount": 0.1,
-				"update": false
-			},
-			{
-				"liquid": "重水",
-				"amount": 0.03
-			}
-		]		
-	},
+	"heating": 0.05,
+    "coolantPower": 0.5,
     "requirements": [
 		"lead/400",
         "metaglass/80",
